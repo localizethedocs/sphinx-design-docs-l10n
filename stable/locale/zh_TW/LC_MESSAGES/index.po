@@ -27,41 +27,41 @@ msgstr ""
 
 #: ../../../index.md:86
 msgid "alabaster"
-msgstr ""
+msgstr "alabaster"
 
 #: ../../../index.md:86
 msgid "sphinx-book-theme"
-msgstr ""
+msgstr "sphinx-book-theme"
 
 #: ../../../index.md:86
 msgid "pydata-sphinx-theme"
-msgstr ""
+msgstr "pydata-sphinx-theme"
 
 #: ../../../index.md:86
 msgid "sphinx-rtd-theme"
-msgstr ""
+msgstr "sphinx-rtd-theme"
 
 #: ../../../index.md:86
 msgid "furo"
-msgstr ""
+msgstr "furo"
 
 #: ../../../index.md:86
 msgid "Themes"
-msgstr ""
+msgstr "主題"
 
 #: ../../../index.md:98
 msgid "Development"
-msgstr ""
+msgstr "開發"
 
 #: ../../../index.md:5
 msgid "sphinx-design"
-msgstr ""
+msgstr "sphinx-design"
 
 #: ../../../index.md:29
 msgid ""
 "A sphinx extension for designing beautiful, screen-size responsive web-"
 "components."
-msgstr ""
+msgstr "一個用於設計美觀且具備螢幕尺寸響應能力的網頁組件 Sphinx 擴充功能。"
 
 #: ../../../index.md:45
 msgid "Conflict free CSS"
@@ -69,7 +69,7 @@ msgstr ""
 
 #: ../../../index.md:46
 msgid "All CSS classes are prefixed, to avoid conflicts with other frameworks."
-msgstr ""
+msgstr "所有 CSS 類別皆帶有前綴，以避免與其他框架發生衝突。"
 
 #: ../../../index.md:48
 msgid "Works without JavaScript"
@@ -77,7 +77,7 @@ msgstr ""
 
 #: ../../../index.md:49
 msgid "JavaScript is not required for any \"essential\" functionality."
-msgstr ""
+msgstr "任何「基本」功能皆不需要 JavaScript。"
 
 #: ../../../index.md:51
 msgid "Configurable"
@@ -89,11 +89,11 @@ msgstr ""
 
 #: ../../../index.md:54
 msgid "Supports non-HTML output formats"
-msgstr ""
+msgstr "支援非 HTML 輸出格式"
 
 #: ../../../index.md:55
 msgid "Components degrade gracefully for non-HTML formats."
-msgstr ""
+msgstr "組件在非 HTML 格式下可優雅地降級。"
 
 #: ../../../index.md:111
 msgid "Grids"
@@ -105,7 +105,7 @@ msgstr ""
 
 #: ../../../index.md:118
 msgid "Cards"
-msgstr ""
+msgstr "卡片"
 
 #: ../../../index.md:122
 msgid "Flexible and extensible content containers."
@@ -153,7 +153,7 @@ msgstr ""
 
 #: ../../../index.md:160
 msgid "Badges, Buttons & Icons"
-msgstr ""
+msgstr "徽章、按鈕與圖示"
 
 #: ../../../index.md:164
 msgid "Roles and directives for {bdg-primary}`badges` and other components."
@@ -165,7 +165,7 @@ msgstr ""
 
 #: ../../../index.md:171
 msgid "Change the default colors and other CSS."
-msgstr ""
+msgstr "變更默認顏色與其他 CSS。"
 
 #: ../../../index.md:178
 msgid ""
