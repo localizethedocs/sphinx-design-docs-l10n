@@ -1,0 +1,280 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Executable Book Project
+# This file is distributed under the same license as the Sphinx Design package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Design latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-22 08:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../steps.md:3
+msgid "Steps"
+msgstr ""
+
+#: ../../../steps.md:5
+msgid ""
+"The `steps` directive lays out a numbered, visually connected procedure — "
+"useful for install guides, tutorials and any ordered \"do this, then this\" "
+"content. Each `step` is numbered automatically, so inserting, removing or re-"
+"ordering steps never means renumbering by hand."
+msgstr ""
+
+#: ../../../steps.md:0
+msgid "Install the package"
+msgstr ""
+
+#: ../../../steps.md:13
+msgid "Run `pip install sphinx-design`."
+msgstr ""
+
+#: ../../../steps.md:0
+msgid "Configure your project"
+msgstr ""
+
+#: ../../../steps.md:17
+msgid "Add `sphinx_design` to the `extensions` list in your `conf.py`."
+msgstr ""
+
+#: ../../../steps.md:0
+msgid "Build the docs"
+msgstr ""
+
+#: ../../../steps.md:21
+msgid "You are ready to use the components."
+msgstr ""
+
+#: ../../../steps.md:0
+msgid "Syntax"
+msgstr ""
+
+#: ../../../steps.md:28
+msgid ""
+"::::{steps}\n"
+"\n"
+":::{step} Install the package\n"
+"Run `pip install sphinx-design`.\n"
+":::\n"
+"\n"
+":::{step} Configure your project\n"
+"Add `sphinx_design` to the `extensions` list in your `conf.py`.\n"
+":::\n"
+"\n"
+":::{step} Build the docs\n"
+"You are ready to use the components.\n"
+":::\n"
+"::::\n"
+msgstr ""
+
+#: ../../../steps.md:31
+msgid ""
+".. steps::\n"
+"\n"
+"   .. step:: Install the package\n"
+"\n"
+"      Run ``pip install sphinx-design``.\n"
+"\n"
+"   .. step:: Configure your project\n"
+"\n"
+"      Add ``sphinx_design`` to the ``extensions`` list in your ``conf.py``.\n"
+"\n"
+"   .. step:: Build the docs\n"
+"\n"
+"      You are ready to use the components.\n"
+msgstr ""
+
+#: ../../../steps.md:38
+msgid ""
+"The visible numbers are drawn with CSS counters, but the underlying markup "
+"is an ordinary ordered list (`<ol>`/`<li>`). This means:"
+msgstr ""
+
+#: ../../../steps.md:41
+msgid ""
+"The numbering is *semantic*: assistive technology announces the step count "
+"and position, and non-HTML builders (LaTeX, `make text`, …) degrade to a "
+"plain numbered list."
+msgstr ""
+
+#: ../../../steps.md:44
+msgid ""
+"No number is stored in the document, so translations and re-ordering can "
+"never desynchronise the visible numbers."
+msgstr ""
+
+#: ../../../steps.md:48
+msgid "Titled and untitled steps"
+msgstr ""
+
+#: ../../../steps.md:50
+msgid ""
+"The step title is optional. Provide it as the directive argument, or omit it "
+"for a bare numbered step."
+msgstr ""
+
+#: ../../../steps.md:0
+msgid "A step with a title"
+msgstr ""
+
+#: ../../../steps.md:56
+msgid "Content for the titled step."
+msgstr ""
+
+#: ../../../steps.md:60
+msgid "A step with no title — just numbered content."
+msgstr ""
+
+#: ../../../steps.md:64
+msgid "Numbering offset"
+msgstr ""
+
+#: ../../../steps.md:66
+msgid ""
+"Use the `start` option on `steps` to begin the numbering at a value other "
+"than `1`, for example when a procedure is split across sections. Both the "
+"visible markers and the ordered-list semantics start from that value."
+msgstr ""
+
+#: ../../../steps.md:0
+msgid "Fourth step"
+msgstr ""
+
+#: ../../../steps.md:74
+msgid "The markers, and the underlying `<ol start=\"4\">`, both start at 4."
+msgstr ""
+
+#: ../../../steps.md:0
+msgid "Fifth step"
+msgstr ""
+
+#: ../../../steps.md:78
+msgid "And continue from there."
+msgstr ""
+
+#: ../../../steps.md:82
+msgid "Colours"
+msgstr ""
+
+#: ../../../steps.md:84
+msgid ""
+"By default the markers use the `primary` semantic colour, so they retint "
+"automatically with your theme. Use the `color` option to pick another "
+"semantic colour — one of `primary`, `secondary`, `success`, `info`, "
+"`warning`, `danger`, `light`, `muted`, `dark`, `white` or `black`."
+msgstr ""
+
+#: ../../../steps.md:0
+msgid "Prepare"
+msgstr ""
+
+#: ../../../steps.md:93
+msgid "The colour applies to every marker in the set."
+msgstr ""
+
+#: ../../../steps.md:0
+msgid "Deploy"
+msgstr ""
+
+#: ../../../steps.md:97
+msgid "Ship it."
+msgstr ""
+
+#: ../../../steps.md:101
+msgid "Nesting other components"
+msgstr ""
+
+#: ../../../steps.md:103
+msgid ""
+"A step can contain any content, including code blocks, dropdowns and other "
+"components."
+msgstr ""
+
+#: ../../../steps.md:0
+msgid "Add the configuration"
+msgstr ""
+
+#: ../../../steps.md:109
+msgid "Drop this into your `conf.py`:"
+msgstr ""
+
+#: ../../../steps.md:111
+msgid "extensions = [\"sphinx_design\"]\n"
+msgstr ""
+
+#: ../../../steps.md:0
+msgid "Read the details"
+msgstr ""
+
+#: ../../../steps.md:0
+msgid "Why this works"
+msgstr ""
+
+#: ../../../steps.md:119
+msgid "`sphinx_design` registers the directives when the extension is loaded."
+msgstr ""
+
+#: ../../../steps.md:124
+msgid "`steps` options"
+msgstr ""
+
+#: ../../../steps.md:126
+msgid "start"
+msgstr ""
+
+#: ../../../steps.md:127
+msgid ""
+"The number the first step is labelled with (a non-negative integer, default "
+"`1`)."
+msgstr ""
+
+#: ../../../steps.md:129
+msgid "color"
+msgstr ""
+
+#: ../../../steps.md:130
+msgid ""
+"The semantic colour of the step markers. One of: `primary`, `secondary`, "
+"`success`, `info`, `warning`, `danger`, `light`, `muted`, `dark`, `white`, "
+"`black`."
+msgstr ""
+
+#: ../../../steps.md:133 ../../../steps.md:138
+msgid "class"
+msgstr ""
+
+#: ../../../steps.md:134
+msgid "Additional CSS classes for the container element."
+msgstr ""
+
+#: ../../../steps.md:136
+msgid "`step` options"
+msgstr ""
+
+#: ../../../steps.md:139
+msgid "Additional CSS classes for the step (list item) element."
+msgstr ""
+
+#: ../../../steps.md:141
+msgid "class-title"
+msgstr ""
+
+#: ../../../steps.md:142
+msgid "Additional CSS classes for the title element."
+msgstr ""
+
+#: ../../../steps.md:144
+msgid "class-content"
+msgstr ""
+
+#: ../../../steps.md:145
+msgid "Additional CSS classes for the content element."
+msgstr ""

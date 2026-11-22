@@ -13,22 +13,22 @@
     },
     "zh_CN" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-11-10 18:10:51 +0100",
+        "hash" : "fcaa5b34945a1ce06de1fcc514b0f22f64403a73",
+        "title" : "\ud83d\ude80 RELEASE: v0.8.0 (#317)"
       }
     },
     "zh_TW" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-11-10 18:10:51 +0100",
+        "hash" : "fcaa5b34945a1ce06de1fcc514b0f22f64403a73",
+        "title" : "\ud83d\ude80 RELEASE: v0.8.0 (#317)"
       }
     }
   },

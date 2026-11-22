@@ -1,0 +1,1006 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Executable Book Project
+# This file is distributed under the same license as the Sphinx Design package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Design latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-22 08:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../../CHANGELOG.md:1
+msgid "Change Log"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:3
+msgid "0.8.0 - 2026-11-10"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:5
+msgid ""
+"New components (accordion, aside, steps, vertical tab sets, and explicit "
+"card header and footer directives), links that open in a new tab, badge "
+"tooltips, a plain-CSS build with no Sass, tab selections that persist across "
+"pages and visits, accessibility fixes, FontAwesome v6 support, and Octicons "
+"v19.42.0. Sphinx 7.2 or later is now required."
+msgstr ""
+
+#: ../../../../CHANGELOG.md:10
+msgid "Upgrade notes"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:12
+msgid ""
+"**Sphinx `>=7.2` is required** (Sphinx 7.0 and 7.1 are no longer supported); "
+"Python stays at `>=3.11` ({pr}`276`)."
+msgstr ""
+
+#: ../../../../CHANGELOG.md:13
+msgid ""
+"**The `^^^` and `+++` card separators are deprecated and warn by default.** "
+"They still render as before, but the first card in a document that uses them "
+"emits one `design.card_legacy` warning, so a build run with `-W` fails until "
+"you do one of two things:"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:16
+msgid ""
+"move the header and footer into the new `card-header` and `card-footer` "
+"directives (or the one-line `:header:` and `:footer:` options), which need "
+"sphinx-design 0.8.0 or later; or"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:18
+msgid "add `\"design.card_legacy\"` to `suppress_warnings` in your `conf.py`."
+msgstr ""
+
+#: ../../../../CHANGELOG.md:20
+msgid ""
+"Once every card is migrated, set `sd_card_legacy_separators = False` to stop "
+"scanning for the separators. The plan is to turn the separators off by "
+"default in 1.0 and remove them in 2.0; the cards page has a migration table "
+"({pr}`294`)."
+msgstr ""
+
+#: ../../../../CHANGELOG.md:23
+msgid ""
+"**Tab selections persist in `localStorage`** instead of `sessionStorage`, so "
+"a chosen tab is remembered across browsing sessions as well as across pages. "
+"The storage key prefix is set by the new `sd_tabs_storage_prefix` option; "
+"set it to an empty string to disable persistence ({pr}`284`, {issue}`103`)."
+msgstr ""
+
+#: ../../../../CHANGELOG.md:27
+msgid ""
+"**Static assets are served through Sphinx's `html_static_path`**, only for "
+"HTML-format builders. A `_sphinx_design_static` directory left in an "
+"existing build directory by an earlier version is unused and can be deleted "
+"({pr}`276`)."
+msgstr ""
+
+#: ../../../../CHANGELOG.md:30
+msgid ""
+"**The stylesheet is plain CSS**, generated without Sass. The `--sd-color-*-"
+"highlight` hover and focus shades are now derived at runtime with `color-"
+"mix()` (behind the old value as a static fallback), so overriding a `--sd-"
+"color-*` variable now also changes its hover shade ({pr}`290`)."
+msgstr ""
+
+#: ../../../../CHANGELOG.md:33
+msgid ""
+"**The private `sphinx_design._compat.findall` helper is removed**; call "
+"`node.findall(...)` directly ({pr}`276`). The private "
+"`CardDirective._create_component` method is renamed `_create_slot`; the old "
+"name stays as an alias for one release ({pr}`294`)."
+msgstr ""
+
+#: ../../../../CHANGELOG.md:36
+msgid ""
+"**`sd-card-text` is added only to the direct child paragraphs** of a card or "
+"dropdown body, and is added to a paragraph's classes instead of replacing "
+"them; paragraphs nested deeper (in admonitions, lists, nested tab sets) no "
+"longer get it ({pr}`278`)."
+msgstr ""
+
+#: ../../../../CHANGELOG.md:40 ../../../../CHANGELOG.md:176
+msgid "New"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:42
+msgid ""
+"✨ `accordion` directive: groups `dropdown`s so that opening one closes the "
+"others, using the browser's native `<details name>` behaviour with no "
+"JavaScript; `:flush:` renders it edge to edge by {user}`chrisjsewell` in {pr}"
+"`291`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:45
+msgid ""
+"✨ `aside` directive: a call-out box floated beside the body text "
+"(`:align:`, `:width:`), rendered as a semantic `<aside>` in HTML and a plain "
+"titled container elsewhere by {user}`chrisjsewell` in {pr}`292` ({issue}`97`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:48
+msgid ""
+"✨ `steps` and `step` directives for numbered procedures, with CSS-only "
+"number markers on an ordered list, `:start:` and `:color:` options by {user}"
+"`chrisjsewell` in {pr}`293`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:50
+msgid ""
+"✨ `card-header` and `card-footer` directives, and `:header:` and `:footer:` "
+"options, for card and grid-item-card headers and footers: the card body is "
+"parsed once as ordinary content, and errors in a header or footer report "
+"their own line (see the upgrade notes for the legacy separators) by {user}"
+"`chrisjsewell` in {pr}`294`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:54
+msgid ""
+"✨ Vertical tab sets: `tab-set` and `tab-set-code` take `:orientation: "
+"vertical`, which stacks the labels in a rail beside the selected panel from "
+"the `md` breakpoint up by {user}`kdeldycke` in {pr}`304` ({issue}`219`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:57
+msgid ""
+"✨ Open links in a new tab: the `link-new-tab` flag on `card` and `grid-item-"
+"card`, and `new-tab` on `button-link` and `button-ref`, for URLs and "
+"internal references alike by {user}`dipinknair` in {pr}`298` ({issue}`170`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:60
+msgid ""
+"✨ Badge tooltips: badge roles accept a trailing `` ; tooltip `` suffix, "
+"rendered as a native HTML `title`; for link and ref badges it applies after "
+"the explicit `text <target>` form, and `` \\; `` escapes a literal semicolon "
+"by {user}`chrisjsewell` in {pr}`286` ({issue}`81`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:63
+msgid ""
+"✨ Every badge role (plain, line, link and ref, in every colour) accepts a "
+"`tooltip` role option, so a reStructuredText custom role (`.. role:: bdg-"
+"stable(bdg-success)` with `:tooltip:`) or an extension can preset a tooltip; "
+"a `; tooltip` suffix still takes precedence by {user}`chrisjsewell` in {pr}"
+"`316`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:67
+msgid ""
+"✨ A line block in `button-link` or `button-ref` text renders as separate "
+"lines (`<br />` in HTML, `\\newline{}` in LaTeX), each line its own gettext "
+"message by {user}`Cherith1222` in {pr}`308` and {user}`chrisjsewell` in {pr}"
+"`315` ({issue}`156`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:70
+msgid ""
+"✨ A URL fragment that targets a tab (e.g. `page.html#tab-name`), or an "
+"element inside a tab panel, opens that tab, on load and on `hashchange` by "
+"{user}`chrisjsewell` in {pr}`284` ({issue}`239`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:72
+msgid ""
+"✨ FontAwesome v6 roles (`fa-solid`, `fa-brands`, `fa-regular`), and CSS "
+"loading via the new `sd_fontawesome_source` and `sd_fontawesome_cdn_url` "
+"options (the supported path for FontAwesome Pro kits) by {user}"
+"`chrisjsewell` in {pr}`285` ({issue}`174`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:75
+msgid ""
+"✨ `sd_fontawesome_version` makes icon role names version-agnostic: any "
+"spelling (`fas`, `fa-solid`, ...) can emit the FontAwesome `\"4\"`, `\"5\"` "
+"or `\"6\"` class scheme, so upgrading FontAwesome is a one-line `conf.py` "
+"change; the default `\"as-named\"` keeps emitting the role name as before by "
+"{user}`chrisjsewell` in {pr}`288` ({issue}`174`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:78
+msgid ""
+"✨ `sphinx_design.testing` module with the `normalize_doctree_xml` helper, "
+"for downstream extensions' doctree regression tests by {user}`chrisjsewell` "
+"in {pr}`277` ({issue}`260`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:81 ../../../../CHANGELOG.md:221
+msgid "Improve"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:83
+msgid ""
+"👌 Keyboard focus rings restored on tab labels, dropdown summaries, buttons "
+"and stretched-link cards (with `:focus-visible`, so they do not show on "
+"mouse click) by {user}`gabalafou` in {pr}`230`, carried in {pr}`283`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:85
+msgid ""
+"👌 Each tab label carries an `aria-controls` attribute naming its panel "
+"(this is not the full WAI-ARIA tabs pattern) by {user}`chrisjsewell` in {pr}"
+"`283` ({issue}`30`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:87
+msgid ""
+"👌 The tab hover colour is the active colour at 80% opacity, so a hovered "
+"tab no longer looks selected by {user}`dchaudhari7177` in {pr}`303` ({issue}"
+"`301`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:89
+msgid ""
+"👌 `sd_fontawesome_latex` also accepts `\"fontawesome5\"` (loading "
+"`fontawesome5.sty` and emitting `\\faIcon{...}`), resolving package clashes "
+"with themes that load it; `True` and `False` work as before by {user}"
+"`chrisjsewell` in {pr}`285` ({issue}`242`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:92
+msgid ""
+"👌 All `sd_*` settings are declared in one typed configuration, and an "
+"invalid value warns (`design.config`) and falls back to the default by {user}"
+"`chrisjsewell` in {pr}`274`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:94
+msgid ""
+"👌 Plain-CSS stylesheet generated by a dependency-free Python tool (no Sass "
+"or Node), with the dead vendor-prefixed declarations removed by {user}"
+"`chrisjsewell` in {pr}`290`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:97 ../../../../CHANGELOG.md:254
+msgid "Fix"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:99
+msgid ""
+"🐛 Synced tabs stay in sync when activated by keyboard or click-and-drag by "
+"{user}`chrisjsewell` in {pr}`284` ({issue}`46`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:101
+msgid ""
+"🐛 A `tab-set` with children other than `tab-item` warns for each one and "
+"renders the valid tabs, instead of crashing with a `ValueError` by {user}"
+"`chrisjsewell` in {pr}`258` ({issue}`243`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:103
+msgid ""
+"🐛 Comments, hyperlink targets and system messages inside `grid`, `card-"
+"carousel`, `tab-set` and `tab-set-code` no longer warn as invalid children, "
+"and targets are kept so references to them resolve, including anchors to "
+"targets inside tabs by {user}`chrisjsewell` in {pr}`271` and {pr}`275` "
+"({issue}`86`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:106
+msgid ""
+"🐛 Buttons survive gettext translation: translated `button-link` and `button-"
+"ref` keep their styling and links by {user}`sneakers-the-rat` in {pr}`264`, "
+"carried in {pr}`270` ({issue}`96`, {issue}`44`, {issue}`263`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:108
+msgid ""
+"🐛 `button-ref` keeps whitespace in reference targets (so multi-word labels, "
+"such as those from `autosectionlabel`, resolve; `ref` targets are lowercased "
+"like the `:ref:` role), and renders nested inline content like `button-link` "
+"by {user}`chrisjsewell` in {pr}`281` ({issue}`110`, {issue}`228`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:111
+msgid ""
+"🐛 The card and grid-item-card `:link:` option keeps whitespace in reference "
+"targets, and lowercases `ref` targets like the `:ref:` role by {user}"
+"`chrisjsewell` in {pr}`282` ({issue}`110`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:113
+msgid ""
+"🐛 Messages and gettext locations for button text name its first content "
+"line in reStructuredText (they named a later line, or the including page for "
+"a button in an included file) by {user}`chrisjsewell` in {pr}`315`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:116
+msgid ""
+"🐛 Icon roles no longer leak SVG markup into toctree labels and the search "
+"index, and `article-info` icons regain their `sd-pr-2` spacing by {user}"
+"`chrisjsewell` in {pr}`279` ({issue}`99`, {issue}`117`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:118
+msgid ""
+"🐛 Dropdowns no longer overwrite user classes on their paragraphs with `sd-"
+"card-text` by {user}`chrisjsewell` in {pr}`278` ({issue}`40`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:120
+msgid ""
+"🐛 Non-HTML builds no longer gain a spurious `_sphinx_design_static` "
+"directory by {user}`chrisjsewell` in {pr}`276` ({issue}`200`, {issue}`235`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:122
+msgid ""
+"🐛 The `sd_fontawesome_latex` row of the global options table no longer "
+"splits into an extra cell by {user}`yvonnefroehlich` in {pr}`297`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:125 ../../../../CHANGELOG.md:154
+#: ../../../../CHANGELOG.md:171
+msgid "Dependencies"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:127
+msgid "⬆️ Sphinx `>=7.2,<10` by {user}`chrisjsewell` in {pr}`276`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:128
+msgid ""
+"⬆️ Octicons v19.8.0 to v19.42.0: 81 new icons (such as `agent`, `library`, "
+"`release` and `sparkle`), 12 redrawn icons and 37 extra sizes; no icon is "
+"removed (`commit` stays available) by {user}`kdeldycke` in {pr}`309`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:131
+msgid ""
+"⬆️ Theme extras refreshed to current releases by {user}`chrisjsewell` in {pr}"
+"`267`, and the `theme-pydata` extra allows `pydata-sphinx-theme<0.25` ({pr}"
+"`313`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:133
+msgid ""
+"⬆️ The build backend allows `flit_core>=3.4,<5` by {user}`chrisjsewell` in "
+"{pr}`312`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:135 ../../../../CHANGELOG.md:160
+msgid "Docs"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:137
+msgid ""
+"📚 Buttons are documented as links styled as buttons, with an accessibility "
+"note by {user}`gabalafou` in {pr}`158`, carried in {pr}`287`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:139
+msgid ""
+"📚 Sizing classes, multiple grid rows, links to synchronised tabs, and the "
+"MyST extensions the examples need by {user}`chrisjsewell` in {pr}`273` "
+"({issue}`172`, {issue}`122`, {issue}`184`, {issue}`247`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:141
+msgid ""
+"📚 A browser support policy (Baseline Widely Available) and a \"Design: the "
+"CSS pipeline\" page by {user}`chrisjsewell` in {pr}`290`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:143
+msgid "📚 Fix a typo in the get started page by {user}`stefmolin` in {pr}`229`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:145 ../../../../CHANGELOG.md:259
+msgid "Internal"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:147
+msgid ""
+"🔧 Releases are published to PyPI with trusted publishing, and every pull "
+"request builds and checks the distributions by {user}`chrisjsewell` in {pr}"
+"`311`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:149
+msgid ""
+"🔧 CI compiles the documentation PDF by {user}`chrisjsewell` in {pr}`289`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:150
+msgid ""
+"♻️ Remove the unused `OCTICON_VERSION` and `OCTICON_CSS` constants by {user}"
+"`ftnext` in {pr}`205`, carried in {pr}`266`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:152
+msgid "0.7.0 - 2026-01-19"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:156
+msgid ""
+"⬆️ Drop Python 3.9 & 3.10, support Python 3.14 by {user}`chrisjsewell` in {pr}"
+"`250`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:157
+msgid ""
+"⬆️ Drop Sphinx v6, add Sphinx v9 support by {user}`chrisjsewell` in {pr}`250` "
+"and {pr}`255`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:158
+msgid ""
+"⬆️ Update Material Design Icons to v4.0.0-116-ge9da21 by {user}`2bndy5` in "
+"{pr}`223`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:162
+msgid ""
+"📚 Document `muted`, `white`, and `black` semantic colors by {user}"
+"`agriyakhetarpal` in {pr}`216`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:164
+msgid "0.6.1 - 2024-08-02"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:166
+msgid "⬆️ Update sphinx to >=6,<9 by {user}`chrisjsewell` in {pr}`212`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:167
+msgid ""
+"👌 Reduce right-padding of dropdown title by {user}`chrisjsewell` in {pr}"
+"`198`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:169
+msgid "0.6.0 - 2024-05-23"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:173
+msgid "⬆️ Python v3.9-3.12 by {user}`chrisjsewell` in {pr}`186`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:174
+msgid "⬆️ Octicon icons to v19.8.0 by {user}`ffvpor` in {pr}`171`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:178
+msgid "✨ Create custom directives"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:180
+msgid ""
+"You can use the `sd_custom_directives` configuration option in your "
+"`conf.py` to add custom directives, with default option values:"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:182
+msgid ""
+"sd_custom_directives = {\n"
+"    \"dropdown-syntax\": {\n"
+"        \"inherit\": \"dropdown\",\n"
+"        \"argument\": \"Syntax\",\n"
+"        \"options\": {\n"
+"            \"color\": \"primary\",\n"
+"            \"icon\": \"code\",\n"
+"        },\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:195
+msgid ""
+"The key is the new directive name to add, and the value is a dictionary with "
+"the following keys:"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:197
+msgid "`inherit`: The directive to inherit from (e.g. `dropdown`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:198
+msgid ""
+"`argument`: The default argument (optional, only for directives that take a "
+"single argument)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:199
+msgid "`options`: A dictionary of default options for the directive (optional)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:201
+msgid "by {user}`chrisjsewell` in {pr}`194`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:203
+msgid "✨ sync tabs by URL query parameters"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:205
+msgid ""
+"Synchronised tabs can now be selected by adding a query parameter to the "
+"URL, for that sync-group, such as `?code=python` for"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:207
+msgid ""
+".. tab-set-code::\n"
+"\n"
+"    .. literalinclude:: snippet.py\n"
+"        :language: python\n"
+"\n"
+"    .. literalinclude:: snippet.js\n"
+"        :language: javascript\n"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:217
+msgid ""
+"The last selected tab key, per group, is also persisted to `SessionStorage`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:219
+msgid "by {user}`mikemckiernan` and {user}`chrisjsewell` in {pr}`196`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:223
+msgid ""
+"👌 Use reference name by default for internal link cards by {user}"
+"`gabalafou` in {pr}`183`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:224
+msgid ""
+"👌 Improve specificity of JS function name by {user}`danirus` in {pr}`153`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:225
+msgid ""
+"👌 Remove duplicate CSS hashing for sphinx >= 7.1 by {user}`chrisjsewell` in "
+"{pr}`193`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:227
+msgid "👌 Improve `dropdown` title bar"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:229
+msgid "There are three visible changes:"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:231
+msgid ""
+"The \"default\" behaviour of the right chevron is to go from right-facing "
+"(closed) to down-facing (open), instead of down-facing (closed) to up-facing "
+"(open). There is also a rotate transition on opening/closing. The old "
+"default behaviour can be retained by using the new `:chevron: down-up` "
+"directive option."
+msgstr ""
+
+#: ../../../../CHANGELOG.md:233
+msgid ""
+"The prefix icon (optional), title text, and chevron state icon are now all "
+"better aligned"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:234
+msgid "The top/bottom padding is now 0.5em instead of 1em"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:236
+msgid ""
+"The PR also introduces three new CSS variables to control font sizes of the "
+"dropdown:"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:238
+msgid ""
+"--sd-fontsize-tabs-label: 1rem;\n"
+"--sd-fontsize-dropdown-title: 1rem;\n"
+"--sd-fontweight-dropdown-title: 700;\n"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:244
+msgid ""
+"Internally, the HTML / CSS is changed, such that the title is now an `inline-"
+"flex` box, with three columns arranged with `justify-content: space-between`:"
+msgstr ""
+
+#: ../../../changelog.md:246
+msgid "icon (optional)"
+msgstr ""
+
+#: ../../../changelog.md:246
+msgid "text (`flex-grow: 1`)"
+msgstr ""
+
+#: ../../../changelog.md:246
+msgid "state chevron"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:250
+msgid ""
+"Also, the state chevron was previously two distinct SVGs (with one hidden), "
+"but now is one that get rotated on open/close."
+msgstr ""
+
+#: ../../../../CHANGELOG.md:252
+msgid "by {user}`chrisjsewell` in {pr}`192`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:256
+msgid ""
+"🐛 Fix tab-item label with nested syntax by {user}`Praecordi` in {pr}`135`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:257
+msgid "🐛 Fix do not close `input` tag by {user}`chrisjsewell` in {pr}`195`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:261
+msgid "📚 Update theme versions by {user}`chrisjsewell` in {pr}`189`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:262
+msgid "📚 Make octicon list a table by {user}`chrisjsewell` in {pr}`188`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:263
+msgid ""
+"📚 Add sphinx-immaterial to doc theme builds by {user}`chrisjsewell` in {pr}"
+"`190`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:264
+msgid "📚 Change syntax dropdown color by {user}`chrisjsewell` in {pr}`191`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:266
+msgid ""
+"🔧 Add FIPS compliant flag to md5 call by {user}`gabor-varga` in {pr}`162`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:267
+msgid ""
+"🔧 define `build.os` for RTD to fix build by {user}`sciencewhiz` in {pr}`176`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:268
+msgid "🔧 Move to ruff by {user}`chrisjsewell` in {pr}`185`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:270
+msgid ""
+"**Full Changelog**: <https://github.com/executablebooks/sphinx-design/"
+"compare/v0.5.0...v0.6.0>"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:272
+msgid "0.5.0 - 2023-07-27"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:274
+msgid "⬆️ Drop Python 3.7 support, by {user}`chrisjsewell` in {pr}`146`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:275
+msgid "⬆️ UPGRADE: sphinx>=5,<8, by {user}`chrisjsewell` in {pr}`148`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:277
+msgid ""
+"**Full Changelog**: <https://github.com/executablebooks/sphinx-design/"
+"compare/v0.4.1...v0.5.0>"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:279
+msgid "v0.4.0 - 2023-04-13"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:281
+msgid ""
+"**Full Changelog**: <https://github.com/executablebooks/sphinx-design/"
+"compare/v0.3.0...v0.4.0>"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:283
+msgid "Enhancements made"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:285
+msgid ""
+"Make default blue color a11y friendly. {pr}`124` ({user}`feanil`, {user}"
+"`choldgraf`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:286
+msgid ""
+"Make card titles translatable {pr}`113` ({user}`jpmckinney`, {user}"
+"`chrisjsewell`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:288
+msgid "Version upgrades"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:290
+msgid "Sphinx 6.x. {pr}`106`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:291
+msgid "Support for Python 3.11 {pr}`105`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:293
+msgid "Contributors to this release"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:295
+msgid ""
+"The following people contributed discussions, new ideas, code and "
+"documentation contributions, and review. See [our definition of contributors]"
+"(https://github-activity.readthedocs.io/en/latest/#how-does-this-tool-define-"
+"contributions-in-the-reports)."
+msgstr ""
+
+#: ../../../../CHANGELOG.md:298
+msgid ""
+"([GitHub contributors page for this release](https://github.com/"
+"executablebooks/sphinx-design/graphs/contributors?"
+"from=2022-08-22&to=2023-04-12&type=c))"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:300
+msgid "v0.3.0 - 2022-08-22"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:302
+msgid ""
+"⬆️ Update Materials Design Icons to v4.0.0-46-gc9e5528, thanks to {user}"
+"`2bndy5` ({pr}`69`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:303
+msgid "🐛 FIX: dropdown/tab-item `:name:` options ({pr}`91`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:304
+msgid "🐛 FIX: Docs build against non-html formats ({pr}`88`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:305
+msgid ""
+"👌 IMPROVE: Add card options `class-img-top`/`class-img-bottom` ({pr}`92`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:306
+msgid "👌 IMPROVE: Add `link-alt` to fix card link accessibility ({pr}`89`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:307
+msgid ""
+"adds the `link-alt` option to `card` (and `grid-item-card`) directives, in "
+"order to assign a discernable name to the link (for screen readers)."
+msgstr ""
+
+#: ../../../../CHANGELOG.md:308
+msgid "👌 IMPROVE: Make tab ids deterministic ({pr}`93`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:309
+msgid "Use increasing indices, rather than UUIDs"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:310
+msgid "🔧 MAINTAIN: Fix docutils `PendingDeprecationWarning` ({pr}`94`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:311
+msgid "📚 DOCS: Update font awesome icons ({pr}`64`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:313
+msgid ""
+"**Full Changelog**: <https://github.com/executablebooks/sphinx-design/"
+"compare/v0.2.0...v0.3.0>"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:315
+msgid "v0.2.0 - 2022-06-14"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:317
+msgid "⬆️ Support Sphinx v5, drop v3"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:318
+msgid "⬆️ Add Python 3.10 support"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:320
+msgid ""
+"**Full Changelog**: <https://github.com/executablebooks/sphinx-design/"
+"compare/v0.1.0...v0.2.0>"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:322
+msgid "v0.1.0 - 2022-04-21"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:324
+msgid ""
+"✨ NEW: Add material design icons roles, thanks to {user}`2bndy5` in {pr}`41`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:325
+msgid "⬆️ UPGRADE: octicons to v16.1.1, thanks to {user}`pocek` in {pr}`43`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:326
+msgid "🐛 FIX: Links in card titles by {user}`chrisjsewell` in {pr}`59`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:327
+msgid ""
+"🐛 FIX: Exception on missing card link by {user}`chrisjsewell` in {pr}`60`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:328
+msgid ""
+"🔧 MAINTAIN: Move from setuptools to flit for package build by {user}"
+"`chrisjsewell` in {pr}`58`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:329
+msgid ""
+"🔧 MAINTAIN: Drop furo-specific stylesheet, thanks to {user}`pradyunsg` in "
+"{pr}`22`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:331
+msgid ""
+"**Full Changelog**: <https://github.com/executablebooks/sphinx-design/"
+"compare/v0.0.13...v0.1.0>"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:333
+msgid "v0.0.13 - 2021-10-27"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:335
+msgid "✨ NEW: add icon `far` role ({pr}`35`), thanks to {user}`OriolAbril`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:337
+msgid "👌 IMPROVE: Styling for tabs ({pr}`21`), thanks to {user}`pradyunsg`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:339
+msgid ""
+"👌 IMPROVE: Properly remove the border on dropdown card body ({pr}`23`), "
+"thanks to {user}`pradyunsg`"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:341
+msgid "🐛 FIX: `sd-outline-*` classes color ({pr}`25`)"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:343
+msgid "v0.0.11 - 2021-09-08"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:345
+msgid "✨ NEW: Add `ref-type` option to `button-ref` directive"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:347
+msgid "v0.0.10 - 2021-08-08"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:349
+msgid ""
+"✨ NEW: Add `grid-item` directive `child-direction` and `child-align` options"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:351
+msgid "✨ NEW: Add `card` directive `img-background` option"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:353
+msgid "v0.0.9 - 2021-06-08"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:355
+msgid "♻️ REFACTOR: `test_sd_hide_root_title` to `sd_hide_title` front-matter"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:357
+msgid "👌 IMPROVE: dropdown chevrons"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:359
+msgid "v0.0.8 - 2021-06-08"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:361
+msgid ""
+"✨ NEW: Add `test_sd_hide_root_title` config option to hide the root title."
+msgstr ""
+
+#: ../../../../CHANGELOG.md:363
+msgid "👌 IMPROVE: `sd-card-hover:hover` add scale 101%"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:365
+msgid "📚 DOCS: Update landing page"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:367
+msgid "v0.0.7 - 2021-05-08"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:369
+msgid "✨ NEW: Add `reverse` option for `grid` directive"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:371
+msgid "✨ NEW: Add animations"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:373
+msgid "v0.0.6 - 2021-04-08"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:375
+msgid "✨ NEW: Add `card-carousel` directive"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:377
+msgid "v0.0.5 - 2021-28-07"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:379
+msgid "👌 IMPROVE: Make octicon's size variable"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:381
+msgid "v0.0.4 - 2021-28-07"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:383
+msgid "👌 IMPROVE: Allow `auto` for grid columns"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:385
+msgid "v0.0.3 - 2021-26-07"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:387
+msgid "👌 IMPROVE: Add more CSS classes and add documentation 📚"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:389
+msgid "v0.0.2 - 2021-23-07"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:391
+msgid "Improve documentation 📚"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:393
+msgid "v0.0.1 - 2021-22-07"
+msgstr ""
+
+#: ../../../../CHANGELOG.md:395
+msgid "Initial release 🎉"
+msgstr ""

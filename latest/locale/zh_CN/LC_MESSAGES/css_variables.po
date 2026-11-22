@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Executable Book Project
+# This file is distributed under the same license as the Sphinx Design package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Design latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-22 08:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../css_variables.md:1
+msgid "CSS Variables"
+msgstr ""
+
+#: ../../../css_variables.md:3
+msgid ""
+"All colors used by sphinx-design are defined as [CSS variables](https://"
+"developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties). "
+"Therefore they can be overriden by adding a `.css` file in a `_static` "
+"folder in your projects source folder (see [the sphinx documentation]"
+"(https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-"
+"html_css_files)):"
+msgstr ""
+
+#: ../../../css_variables.md:6
+msgid ""
+"html_static_path = [\"_static\"]\n"
+"html_css_files = [\"custom.css\"]\n"
+msgstr ""
+
+#: ../../../css_variables.md:11
+msgid ""
+"For colors, there are nine semantic colors that can be defined. For each of "
+"these colors you should define:"
+msgstr ""
+
+#: ../../../css_variables.md:14
+msgid "`--sd-color-{name}` as the actual color"
+msgstr ""
+
+#: ../../../css_variables.md:15
+msgid ""
+"`--sd-color-{name}-highlight` as the color used when the component is "
+"highlighted (e.g. if hovering over a button). By default, this is a 15% "
+"darker version of the original color."
+msgstr ""
+
+#: ../../../css_variables.md:17
+msgid ""
+"`--sd-color-{name}-text` as the color to use for text displayed on top of "
+"the color. By default, this is dark grey for light colors and white for dark "
+"colors."
+msgstr ""
+
+#: ../../../css_variables.md:20
+msgid "The defaults are:"
+msgstr ""
+
+#: ../../../css_variables.md:22
+msgid ""
+":root {\n"
+"    --sd-color-primary: #007bff;\n"
+"    --sd-color-secondary: #6c757d;\n"
+"    --sd-color-success: #28a745;\n"
+"    --sd-color-info: #17a2b8;\n"
+"    --sd-color-warning: #f0b37e;\n"
+"    --sd-color-danger: #dc3545;\n"
+"    --sd-color-light: #f8f9fa;\n"
+"    --sd-color-muted: #6c757d;\n"
+"    --sd-color-dark: #212529;\n"
+"    --sd-color-primary-highlight: #0069d9;\n"
+"    --sd-color-secondary-highlight: #5c636a;\n"
+"    --sd-color-success-highlight: #228e3b;\n"
+"    --sd-color-info-highlight: #148a9c;\n"
+"    --sd-color-warning-highlight: #cc986b;\n"
+"    --sd-color-danger-highlight: #bb2d3b;\n"
+"    --sd-color-light-highlight: #d3d4d5;\n"
+"    --sd-color-muted-highlight: #5c636a;\n"
+"    --sd-color-dark-highlight: #1c1f23;\n"
+"    --sd-color-primary-text: #fff;\n"
+"    --sd-color-secondary-text: #fff;\n"
+"    --sd-color-success-text: #fff;\n"
+"    --sd-color-info-text: #fff;\n"
+"    --sd-color-warning-text: #212529;\n"
+"    --sd-color-danger-text: #fff;\n"
+"    --sd-color-light-text: #212529;\n"
+"    --sd-color-muted-text: #fff;\n"
+"    --sd-color-dark-text: #fff;\n"
+"    --sd-color-shadow: rgba(0, 0, 0, 0.15);\n"
+"    --sd-color-card-border: rgba(0, 0, 0, 0.125);\n"
+"    --sd-color-card-border-hover: hsla(231, 99%, 66%, 1);\n"
+"    --sd-color-card-background: transparent;\n"
+"    --sd-color-card-text: inherit;\n"
+"    --sd-color-card-header: transparent;\n"
+"    --sd-color-card-footer: transparent;\n"
+"    --sd-color-tabs-label-active: hsla(231, 99%, 66%, 1);\n"
+"    --sd-color-tabs-label-hover: color-mix(in srgb, var(--sd-color-tabs-"
+"label-active) 80%, transparent);\n"
+"    --sd-color-tabs-label-inactive: hsl(0, 0%, 66%);\n"
+"    --sd-color-tabs-underline-active: hsla(231, 99%, 66%, 1);\n"
+"    --sd-color-tabs-underline-hover: rgba(178, 206, 245, 0.62);\n"
+"    --sd-color-tabs-underline-inactive: transparent;\n"
+"    --sd-color-tabs-overline: rgb(222, 222, 222);\n"
+"    --sd-color-tabs-underline: rgb(222, 222, 222);\n"
+"    --sd-fontsize-tabs-label: 1rem;\n"
+"    --sd-fontsize-dropdown-title: 1rem;\n"
+"    --sd-fontweight-dropdown-title: 700;\n"
+"}\n"
+msgstr ""

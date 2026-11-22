@@ -1,0 +1,234 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Executable Book Project
+# This file is distributed under the same license as the Sphinx Design package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Design latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-22 08:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../accordions.md:3
+msgid "Accordions"
+msgstr ""
+
+#: ../../../accordions.md:5
+msgid ""
+"An `accordion` groups a set of [dropdowns](sd-dropdowns) so that they behave "
+"as one *exclusive* set: opening one item automatically closes the others. "
+"This is useful for FAQ-style content, where only one answer should be "
+"visible at a time."
+msgstr ""
+
+#: ../../../accordions.md:9
+msgid ""
+"The behaviour is native to HTML and requires **no JavaScript**: the "
+"directive simply gives every item a shared `name`, and the browser does the "
+"rest."
+msgstr ""
+
+#: ../../../accordions.md:0
+msgid "What is an accordion?"
+msgstr ""
+
+#: ../../../accordions.md:15
+msgid "A container of dropdowns where opening one collapses the others."
+msgstr ""
+
+#: ../../../accordions.md:0
+msgid "How do I add one?"
+msgstr ""
+
+#: ../../../accordions.md:19
+msgid ""
+"Nest `dropdown` directives inside an `accordion` directive (see the syntax "
+"below)."
+msgstr ""
+
+#: ../../../accordions.md:0
+msgid "Does it need JavaScript?"
+msgstr ""
+
+#: ../../../accordions.md:24
+msgid ""
+"No. It uses the native `name` attribute shared across `<details>` elements."
+msgstr ""
+
+#: ../../../accordions.md:0
+msgid "Syntax"
+msgstr ""
+
+#: ../../../accordions.md:31
+msgid ""
+"::::{accordion}\n"
+"\n"
+":::{dropdown} First item\n"
+"Opening another item closes this one.\n"
+":::\n"
+"\n"
+":::{dropdown} Second item\n"
+":open:\n"
+"\n"
+"Content of the second item.\n"
+":::\n"
+"\n"
+":::{dropdown} Third item\n"
+"Content of the third item.\n"
+":::\n"
+"::::\n"
+msgstr ""
+
+#: ../../../accordions.md:34
+msgid ""
+".. accordion::\n"
+"\n"
+"    .. dropdown:: First item\n"
+"\n"
+"        Opening another item closes this one.\n"
+"\n"
+"    .. dropdown:: Second item\n"
+"        :open:\n"
+"\n"
+"        Content of the second item.\n"
+"\n"
+"    .. dropdown:: Third item\n"
+"\n"
+"        Content of the third item.\n"
+msgstr ""
+
+#: ../../../accordions.md:40
+msgid "The `:open:` interaction"
+msgstr ""
+
+#: ../../../accordions.md:42
+msgid ""
+"Because only one item in an exclusive group can be open at a time, you may "
+"mark **at most one** child dropdown with the [`:open:`](sd-dropdowns) "
+"option, to have the accordion start with that item expanded. If several "
+"items are marked `:open:`, only the first is kept open (the rest are "
+"collapsed and a `design.accordion` warning is emitted)."
+msgstr ""
+
+#: ../../../accordions.md:48
+msgid "Flush variant"
+msgstr ""
+
+#: ../../../accordions.md:50
+msgid ""
+"Add the `:flush:` flag for an edge-to-edge look (like Bootstrap's *accordion-"
+"flush*): the outer side borders and corner rounding are removed, so the "
+"accordion blends into its parent container."
+msgstr ""
+
+#: ../../../accordions.md:0
+msgid "First item"
+msgstr ""
+
+#: ../../../accordions.md:59 ../../../accordions.md:63
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis arcu "
+"vitae odio gravida congue. Donec porttitor ac risus et condimentum. "
+"Phasellus bibendum ac risus a sollicitudin. Proin pulvinar risus ac mauris "
+"aliquet fermentum et varius nisi. Etiam sit amet metus ac ipsum placerat "
+"congue semper non diam. Nunc luctus tincidunt ipsum id eleifend. Ut sed "
+"faucibus ipsum. Aliquam maximus dictum posuere. Nunc vitae libero nec enim "
+"tempus euismod. Aliquam sed lectus ac nisl sollicitudin ultricies id at "
+"neque. Aliquam fringilla odio vitae lorem ornare, sit amet scelerisque orci "
+"fringilla. Nam sed arcu dignissim, ultrices quam sit amet, commodo ipsum. "
+"Etiam quis nunc at ligula tincidunt eleifend."
+msgstr ""
+
+#: ../../../accordions.md:0
+msgid "Second item"
+msgstr ""
+
+#: ../../../accordions.md:66
+msgid "Nested dropdowns"
+msgstr ""
+
+#: ../../../accordions.md:68
+msgid ""
+"Only the **direct** children of an accordion join the exclusive group. A "
+"dropdown nested inside another item's *body* keeps its own independent open/"
+"close behaviour, so you can freely nest expandable content within an "
+"accordion item."
+msgstr ""
+
+#: ../../../accordions.md:0
+msgid "Item with nested content"
+msgstr ""
+
+#: ../../../accordions.md:78
+msgid "This item stays open independently of the dropdown below it:"
+msgstr ""
+
+#: ../../../accordions.md:0
+msgid "A nested dropdown"
+msgstr ""
+
+#: ../../../accordions.md:83
+msgid "Opening or closing me does not affect the sibling accordion items."
+msgstr ""
+
+#: ../../../accordions.md:0
+msgid "Another item"
+msgstr ""
+
+#: ../../../accordions.md:88
+msgid ""
+"Opening me closes the first item, but the *nested* dropdown is unaffected."
+msgstr ""
+
+#: ../../../accordions.md:94
+msgid "Browser support"
+msgstr ""
+
+#: ../../../accordions.md:96
+msgid ""
+"The exclusive-open behaviour relies on the native `name` attribute on "
+"`<details>` elements, which is [Baseline *Newly* Available](https://web.dev/"
+"baseline) (Chrome/Edge 120+, Firefox 130+ and Safari 17.2+, all shipped in "
+"2024). This is a deliberate exception to the project's [*Baseline Widely "
+"Available*](get_started.md) policy, permitted because it **degrades "
+"gracefully**: browsers that predate the feature simply ignore the shared "
+"`name` and render each item as an ordinary, independently collapsible "
+"dropdown. Nothing breaks — you only lose the automatic collapsing of sibling "
+"items, and no JavaScript fallback is involved."
+msgstr ""
+
+#: ../../../accordions.md:106
+msgid "`accordion` options"
+msgstr ""
+
+#: ../../../accordions.md:108
+msgid "flush"
+msgstr ""
+
+#: ../../../accordions.md:109
+msgid ""
+"Flag. Remove the outer side borders and corner rounding for an edge-to-edge "
+"(Bootstrap *accordion-flush*) appearance."
+msgstr ""
+
+#: ../../../accordions.md:112
+msgid "class"
+msgstr ""
+
+#: ../../../accordions.md:113
+msgid "Additional CSS classes for the accordion container element."
+msgstr ""
+
+#: ../../../accordions.md:115
+msgid ""
+"The individual items are ordinary [dropdowns](sd-dropdowns) and accept all "
+"of the `dropdown` options."
+msgstr ""

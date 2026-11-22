@@ -1,0 +1,255 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Executable Book Project
+# This file is distributed under the same license as the Sphinx Design package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Design latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-22 08:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../design_css.md:1
+msgid "Design: the CSS pipeline"
+msgstr ""
+
+#: ../../../design_css.md:3
+msgid ""
+"This page records why the stylesheet build is shaped the way it is, and the "
+"invariants that keep it safe to change. For day-to-day commands see the "
+"repository's `AGENTS.md`."
+msgstr ""
+
+#: ../../../design_css.md:7
+msgid "Context"
+msgstr ""
+
+#: ../../../design_css.md:9
+msgid ""
+"Until v0.7 the stylesheet was authored in SCSS and compiled with dart-sass "
+"via npm — the only reason Node existed in the toolchain. An audit showed the "
+"Sass usage was shallow: 26 mechanical loops (spacing, grid columns × "
+"breakpoints, colour variants, borders, sizing, display, text utilities), two "
+"build-time colour computations (a contrast picker and a 15% darkening for "
+"hover shades), and concatenation + minification. There were no mixins and no "
+"deep nesting."
+msgstr ""
+
+#: ../../../design_css.md:16
+msgid ""
+"That shape had real costs: a Node dependency for a Python project (and the "
+"perennial sass version-pin chore); hover shades baked at compile time, so "
+"user overrides of `--sd-color-*` never reached them; and a \"supported "
+"browsers\" list frozen in 2021."
+msgstr ""
+
+#: ../../../design_css.md:21
+msgid "Decision"
+msgstr ""
+
+#: ../../../design_css.md:23
+msgid "The stylesheet is now plain CSS in two tiers:"
+msgstr ""
+
+#: ../../../design_css.md:25
+msgid ""
+"**Hand-authored component CSS** — `style/*.css`, one file per component "
+"area, written with expanded selectors."
+msgstr ""
+
+#: ../../../design_css.md:27
+msgid ""
+"**Generated utility CSS** — emitted by `tools/generate_css.py` from "
+"declarative tokens in `style/design.toml` (palette with precomputed contrast "
+"text colours, spacing scale, breakpoints, column count). A utility variant "
+"is a data entry, not a loop."
+msgstr ""
+
+#: ../../../design_css.md:32
+msgid ""
+"The generator concatenates both tiers in an explicit order, minifies with "
+"[`rcssmin`](https://pypi.org/project/rcssmin/) (a mature, frozen, pure-"
+"Python minifier — deliberately not hand-rolled), and writes the single "
+"committed artifact `sphinx_design/static/sphinx-design.min.css`. Only the "
+"artifact ships; the generator, tokens and sources are development-only."
+msgstr ""
+
+#: ../../../design_css.md:38
+msgid ""
+"Alternatives considered: keeping dart-sass (permanent Node dependency for "
+"three shallow features); `libsass-python` (upstream libsass is deprecated by "
+"the Sass team); shipping unminified CSS (workable, but a free 5% wire saving "
+"was kept by using an off-the-shelf minifier)."
+msgstr ""
+
+#: ../../../design_css.md:43
+msgid ""
+"The hover shades are now computed in the browser: `--sd-color-*-highlight` "
+"is declared twice — a static fallback first, then `color-mix(in srgb, black "
+"15%, var(--sd-color-*))` — so overriding a theme colour re-derives its hover "
+"shade at runtime, and browsers without `color-mix()` keep the previous "
+"static value."
+msgstr ""
+
+#: ../../../design_css.md:49
+msgid "The cascade is `ASSEMBLY` order"
+msgstr ""
+
+#: ../../../design_css.md:51
+msgid ""
+"`tools/generate_css.py` assembles the stylesheet from an explicit `ASSEMBLY` "
+"list interleaving hand-authored files and generated families. This is a "
+"deliberate choice over globbing: **source order is the CSS cascade**, and "
+"two rules with equal specificity resolve by position. An automatic glob "
+"would make the cascade an accident of filenames. The cost — remembering to "
+"register new files — is converted into a loud failure by the completeness "
+"guard below."
+msgstr ""
+
+#: ../../../design_css.md:58
+msgid ""
+"This is not theoretical: during the migration, two real cascade-order "
+"inversions (grid `col-auto` vs `row-cols` utilities, and the container max-"
+"width media caps) were caught only because the verification tooling was made "
+"order-aware. Any future restructuring of `ASSEMBLY` should be checked with "
+"the equivalence tool's order pass."
+msgstr ""
+
+#: ../../../design_css.md:64
+msgid "Invariants and their enforcement"
+msgstr ""
+
+#: ../../../design_css.md:66
+msgid ""
+"Every invariant below is enforced by a named guard — if a guard is removed, "
+"its row here is no longer true."
+msgstr ""
+
+#: ../../../design_css.md:69
+msgid "Invariant"
+msgstr ""
+
+#: ../../../design_css.md:69
+msgid "Enforced by"
+msgstr ""
+
+#: ../../../design_css.md:69
+msgid ""
+"Every `style/*.css` file is registered in `ASSEMBLY` (and vice versa, "
+"including generator functions)"
+msgstr ""
+
+#: ../../../design_css.md:71
+msgid "`generate_css.py` fails the build on any drift, in either direction"
+msgstr ""
+
+#: ../../../design_css.md:71
+msgid "`design.toml` is well-formed (keys, types, no unknown fields)"
+msgstr ""
+
+#: ../../../design_css.md:72
+msgid "schema validation on every generator run, naming the offending key"
+msgstr ""
+
+#: ../../../design_css.md:72
+msgid "The committed artifact is never stale"
+msgstr ""
+
+#: ../../../design_css.md:72
+msgid ""
+"the `css` pre-commit hook (also triggered by generator changes) and `tests/"
+"test_css.py::test_artifact_is_up_to_date` in CI"
+msgstr ""
+
+#: ../../../design_css.md:73
+msgid "The artifact always parses as valid CSS"
+msgstr ""
+
+#: ../../../design_css.md:73
+msgid "`test_artifact_parses_cleanly` (tinycss2, zero error nodes)"
+msgstr ""
+
+#: ../../../design_css.md:74
+msgid "Generated utility families exactly match the token data"
+msgstr ""
+
+#: ../../../design_css.md:74
+msgid ""
+"`test_generated_family_counts_match_design_toml` (rule counts derived from "
+"`design.toml` arithmetic)"
+msgstr ""
+
+#: ../../../design_css.md:75
+msgid "The `color-mix()` shade always follows its static fallback"
+msgstr ""
+
+#: ../../../design_css.md:76
+msgid "`test_highlight_uses_runtime_color_mix`"
+msgstr ""
+
+#: ../../../design_css.md:76
+msgid "Output is byte-deterministic (across runs, Python versions, platforms)"
+msgstr ""
+
+#: ../../../design_css.md:76
+msgid ""
+"stdlib + frozen `rcssmin`, `Decimal` rounding, explicit ordering; "
+"`.gitattributes` pins the artifact to LF"
+msgstr ""
+
+#: ../../../design_css.md:77
+msgid "Migrations/restructurings preserve rule sets *and* cascade order"
+msgstr ""
+
+#: ../../../design_css.md:78
+msgid ""
+"`tools/check_css_equivalence.py` — opt-in via `SD_CSS_EQUIV_BASE=<git-ref>`, "
+"diffs rule sets against an allowlist and fails on source-order inversions "
+"between co-applicable rules"
+msgstr ""
+
+#: ../../../design_css.md:80
+msgid "Public API"
+msgstr ""
+
+#: ../../../design_css.md:82
+msgid "The following are stable interfaces covered by deprecation policy:"
+msgstr ""
+
+#: ../../../design_css.md:84
+msgid "the `--sd-*` CSS custom property names;"
+msgstr ""
+
+#: ../../../design_css.md:85
+msgid "the `sd-*` utility and component class names;"
+msgstr ""
+
+#: ../../../design_css.md:86
+msgid "the served filename `sphinx-design.min.css`."
+msgstr ""
+
+#: ../../../design_css.md:88
+msgid ""
+"Everything else — the generator, `design.toml`'s schema, `style/` file "
+"layout, the checker — is internal and may change without notice."
+msgstr ""
+
+#: ../../../design_css.md:91
+msgid "Browser support"
+msgstr ""
+
+#: ../../../design_css.md:93
+msgid ""
+"Styles target **Baseline Widely Available** web features; see the policy in "
+"[Getting started](get_started.md). Individual features may use *Baseline "
+"Newly Available* CSS with graceful degradation (as `color-mix()` does "
+"above), noted where they are documented."
+msgstr ""
