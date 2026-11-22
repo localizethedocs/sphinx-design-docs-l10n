@@ -1,0 +1,898 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Executable Book Project
+# This file is distributed under the same license as the Sphinx Design package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Design latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-22 08:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cards.md:3
+msgid "Cards"
+msgstr ""
+
+#: ../../../cards.md:5
+msgid ""
+"Cards contain content and actions about a single subject. A card is a "
+"flexible and extensible content container, it can be formatted with "
+"components including headers and footers, titles and images."
+msgstr ""
+
+#: ../../../cards.md:9 ../../../cards.md:35 ../../../cards.md:63
+#: ../../../cards.md:74 ../../../cards.md:86 ../../../cards.md:391
+msgid "Card Title"
+msgstr ""
+
+#: ../../../cards.md:11 ../../../cards.md:41 ../../../cards.md:67
+#: ../../../cards.md:80 ../../../cards.md:94 ../../../cards.md:394
+msgid "Card content"
+msgstr ""
+
+#: ../../../cards.md:14
+msgid ""
+"See the [Material Design](https://material.io/components/cards) and "
+"[Bootstrap card](https://getbootstrap.com/docs/5.0/layout/grid/) "
+"descriptions for further details."
+msgstr ""
+
+#: ../../../cards.md:0
+msgid "Syntax"
+msgstr ""
+
+#: ../../../cards.md:19
+msgid ""
+":::{card} Card Title\n"
+"\n"
+"Card content\n"
+":::\n"
+msgstr ""
+
+#: ../../../cards.md:22
+msgid ""
+".. card:: Card Title\n"
+"\n"
+"    Card content\n"
+msgstr ""
+
+#: ../../../cards.md:28
+msgid "Card headers and footers"
+msgstr ""
+
+#: ../../../cards.md:30
+msgid ""
+"Add a header and/or footer to a card with the `card-header` and `card-"
+"footer` directives. They always render in their slots — the header at the "
+"top and the footer at the bottom of the card — regardless of where they "
+"appear within the card body (the recommended order is header, then body, "
+"then footer):"
+msgstr ""
+
+#: ../../../cards.md:38 ../../../cards.md:77 ../../../cards.md:89
+#: ../../../cards.md:124 ../../../cards.md:139 ../../../cards.md:392
+msgid "Header"
+msgstr ""
+
+#: ../../../cards.md:44 ../../../cards.md:83 ../../../cards.md:97
+#: ../../../cards.md:130 ../../../cards.md:145 ../../../cards.md:396
+msgid "Footer"
+msgstr ""
+
+#: ../../../cards.md:51
+msgid ""
+"::::{card} Card Title\n"
+"\n"
+":::{card-header}\n"
+"Header\n"
+":::\n"
+"\n"
+"Card content\n"
+"\n"
+":::{card-footer}\n"
+"Footer\n"
+":::\n"
+"::::\n"
+msgstr ""
+
+#: ../../../cards.md:54
+msgid ""
+".. card:: Card Title\n"
+"\n"
+"    .. card-header::\n"
+"\n"
+"        Header\n"
+"\n"
+"    Card content\n"
+"\n"
+"    .. card-footer::\n"
+"\n"
+"        Footer\n"
+msgstr ""
+
+#: ../../../cards.md:60
+msgid ""
+"For a single line of content, the `header` and `footer` options are a "
+"convenient short-hand (they accept inline markup, and compose with the card "
+"body):"
+msgstr ""
+
+#: ../../../cards.md:63
+msgid "A header"
+msgstr ""
+
+#: ../../../cards.md:63
+msgid "A footer"
+msgstr ""
+
+#: ../../../cards.md:70
+msgid ""
+"When using cards in grids (see [`grid-item-card`](./grids.md)) footers can "
+"be aligned."
+msgstr ""
+
+#: ../../../cards.md:92 ../../../cards.md:272
+msgid "Longer"
+msgstr ""
+
+#: ../../../cards.md:101
+msgid "Card images"
+msgstr ""
+
+#: ../../../cards.md:103
+msgid ""
+"You can also add an image as the background of a card or at the top/bottom "
+"of the card, with the `img-background`, `img-top`, `img-bottom` options:"
+msgstr ""
+
+#: ../../../cards.md:109 ../../../cards.md:119 ../../../cards.md:134
+msgid "your desired alt text"
+msgstr ""
+
+#: ../../../cards.md:109 ../../../cards.md:119 ../../../cards.md:134
+msgid "Title"
+msgstr ""
+
+#: ../../../cards.md:114
+msgid "Text"
+msgstr ""
+
+#: ../../../cards.md:127 ../../../cards.md:142 ../../../cards.md:238
+#: ../../../cards.md:246 ../../../cards.md:254
+msgid "Content"
+msgstr ""
+
+#: ../../../cards.md:154
+msgid ""
+":::::{grid} 2 3 3 4\n"
+"\n"
+"::::{grid-item}\n"
+"\n"
+":::{card} Title\n"
+":img-background: images/particle_background.jpg\n"
+":class-card: sd-text-black\n"
+":img-alt: my text\n"
+"\n"
+"Text\n"
+":::\n"
+"\n"
+"::::\n"
+"\n"
+"::::{grid-item-card} Title\n"
+":img-top: images/particle_background.jpg\n"
+":img-alt:\n"
+"\n"
+":::{card-header}\n"
+"Header\n"
+":::\n"
+"\n"
+"Content\n"
+"\n"
+":::{card-footer}\n"
+"Footer\n"
+":::\n"
+"::::\n"
+"\n"
+"::::{grid-item-card} Title\n"
+":img-bottom: images/particle_background.jpg\n"
+"\n"
+":::{card-header}\n"
+"Header\n"
+":::\n"
+"\n"
+"Content\n"
+"\n"
+":::{card-footer}\n"
+"Footer\n"
+":::\n"
+"::::\n"
+"\n"
+":::::\n"
+msgstr ""
+
+#: ../../../cards.md:157
+msgid ""
+".. grid:: 2 3 3 4\n"
+"\n"
+"    .. grid-item::\n"
+"\n"
+"        .. card:: Title\n"
+"            :img-background: images/particle_background.jpg\n"
+"            :class-card: sd-text-black\n"
+"            :img-alt: my text\n"
+"\n"
+"            Text\n"
+"\n"
+"    .. grid-item-card:: Title\n"
+"        :img-top: images/particle_background.jpg\n"
+"        :img-alt:\n"
+"\n"
+"        .. card-header::\n"
+"\n"
+"            Header\n"
+"\n"
+"        Content\n"
+"\n"
+"        .. card-footer::\n"
+"\n"
+"            Footer\n"
+"\n"
+"    .. grid-item-card:: Title\n"
+"        :img-bottom: images/particle_background.jpg\n"
+"\n"
+"        .. card-header::\n"
+"\n"
+"            Header\n"
+"\n"
+"        Content\n"
+"\n"
+"        .. card-footer::\n"
+"\n"
+"            Footer\n"
+msgstr ""
+
+#: ../../../cards.md:165
+msgid "Clickable cards"
+msgstr ""
+
+#: ../../../cards.md:167
+msgid ""
+"Using the `link` and `link-type` options, you can turn an entire card into a "
+"clickable link. Try hovering over then clicking on the cards below:"
+msgstr ""
+
+#: ../../../cards.md:170
+msgid "Clickable Card (external)"
+msgstr ""
+
+#: ../../../cards.md:174
+msgid "The entire card can be clicked to navigate to `https://example.com`."
+msgstr ""
+
+#: ../../../cards.md:177
+msgid "Clickable Card (external, new tab)"
+msgstr ""
+
+#: ../../../cards.md:182
+msgid ""
+"The entire card can be clicked to open `https://example.com` in a new tab."
+msgstr ""
+
+#: ../../../cards.md:185
+msgid "Clickable Card (internal)"
+msgstr ""
+
+#: ../../../cards.md:189
+msgid ""
+"The entire card can be clicked to navigate to the `cards-clickable` "
+"reference target."
+msgstr ""
+
+#: ../../../cards.md:195
+msgid ""
+"(cards-clickable)=\n"
+"\n"
+"## Clickable cards\n"
+"\n"
+"Using the `link` and `link-type` options, you can turn an entire card into a "
+"clickable link. Try hovering over then clicking on the cards below:\n"
+"\n"
+":::{card} Clickable Card (external)\n"
+":link: https://example.com\n"
+"\n"
+"The entire card can be clicked to navigate to <https://example.com>.\n"
+":::\n"
+"\n"
+":::{card} Clickable Card (external)\n"
+":link: https://example.com\n"
+":link-alt: example.com\n"
+"\n"
+"The entire card can be clicked to navigate to <https://example.com>.\n"
+":::\n"
+"\n"
+":::{card} Clickable Card (external, new tab)\n"
+":link: https://example.com\n"
+":link-alt: example.com (opens in a new tab)\n"
+":link-new-tab:\n"
+"\n"
+"The entire card can be clicked to open <https://example.com> in a new tab.\n"
+":::\n"
+"\n"
+":::{card} Clickable Card (internal)\n"
+":link: cards-clickable\n"
+":link-type: ref\n"
+"\n"
+"The entire card can be clicked to navigate to the `cards-clickable` "
+"reference target.\n"
+":::\n"
+"\n"
+":::{card} Clickable Card (internal)\n"
+":link: cards-clickable\n"
+":link-type: ref\n"
+":link-alt: clickable cards\n"
+"\n"
+"The entire card can be clicked to navigate to the `cards-clickable` "
+"reference target.\n"
+":::\n"
+msgstr ""
+
+#: ../../../cards.md:198
+msgid ""
+".. _cards-clickable:\n"
+"\n"
+"Clickable cards\n"
+"...............\n"
+"\n"
+"Using the ``link`` and ``link-type`` options, you can turn an entire card "
+"into a clickable link. Try hovering over then clicking on the cards below:\n"
+"\n"
+".. card:: Clickable Card (external)\n"
+"    :link: https://example.com\n"
+"\n"
+"    The entire card can be clicked to navigate to https://example.com.\n"
+"\n"
+".. card:: Clickable Card (external)\n"
+"    :link: https://example.com\n"
+"    :link-alt: example.com\n"
+"\n"
+"    The entire card can be clicked to navigate to https://example.com.\n"
+"\n"
+".. card:: Clickable Card (external, new tab)\n"
+"    :link: https://example.com\n"
+"    :link-alt: example.com (opens in a new tab)\n"
+"    :link-new-tab:\n"
+"\n"
+"    The entire card can be clicked to open https://example.com in a new "
+"tab.\n"
+"\n"
+".. card:: Clickable Card (internal)\n"
+"    :link: cards-clickable\n"
+"    :link-type: ref\n"
+"\n"
+"    The entire card can be clicked to navigate to the ``cards-clickable`` "
+"reference target.\n"
+"\n"
+".. card:: Clickable Card (internal)\n"
+"    :link: cards-clickable\n"
+"    :link-type: ref\n"
+"    :link-alt: clickable cards\n"
+"\n"
+"    The entire card can be clicked to navigate to the ``cards-clickable`` "
+"reference target.\n"
+msgstr ""
+
+#: ../../../cards.md:204
+msgid ""
+"The **external link** created above is equivalent to using `<https://"
+"example.com>` (<https://example.com>), or if the `link-alt` option is "
+"provided, `[alt text](https://example.com)` ([alt text](https://"
+"example.com))."
+msgstr ""
+
+#: ../../../cards.md:210
+msgid ""
+"Using URLs as link text makes it harder for disabled people and for search "
+"engines to digest your web page, so it's best to provide link text via the "
+"`link-alt` option."
+msgstr ""
+
+#: ../../../cards.md:215
+msgid ""
+"The **internal link** created above is equivalent to using `` {ref}`cards-"
+"clickable` `` ({ref}`cards-clickable`), or if the `link-alt` option is "
+"provided, `` {ref}`alt text <cards-clickable>` `` ({ref}`alt text <cards-"
+"clickable>`)."
+msgstr ""
+
+#: ../../../cards.md:221
+msgid ""
+"You cannot add additional links to the clickable card, neither in the card "
+"title nor in the card body. The entire card becomes a single link to the "
+"destination you specify, which overrides any other links inside the card."
+msgstr ""
+
+#: ../../../cards.md:228
+msgid "Aligning cards"
+msgstr ""
+
+#: ../../../cards.md:230
+msgid ""
+"You can use the `text-align` option to align the text in a card, and also "
+"`auto` margins to align the cards horizontally."
+msgstr ""
+
+#: ../../../cards.md:233
+msgid "Align Center"
+msgstr ""
+
+#: ../../../cards.md:241
+msgid "Align Right"
+msgstr ""
+
+#: ../../../cards.md:249
+msgid "Align Left"
+msgstr ""
+
+#: ../../../cards.md:259
+msgid "Card carousels"
+msgstr ""
+
+#: ../../../cards.md:261
+msgid ""
+"The `card-carousel` directive can be used to create a single row of fixed "
+"width, scrollable cards. The argument should be a number between 1 and 12, "
+"to denote the number of cards to display."
+msgstr ""
+
+#: ../../../cards.md:264
+msgid ""
+"When scrolling a carousel, the scroll will snap to the start of the nearest "
+"card:"
+msgstr ""
+
+#: ../../../cards.md:268
+msgid "card 1"
+msgstr ""
+
+#: ../../../cards.md:269 ../../../cards.md:274
+msgid "content"
+msgstr ""
+
+#: ../../../cards.md:271
+msgid "card 2"
+msgstr ""
+
+#: ../../../cards.md:276
+msgid "card 3"
+msgstr ""
+
+#: ../../../cards.md:278
+msgid "card 4"
+msgstr ""
+
+#: ../../../cards.md:280
+msgid "card 5"
+msgstr ""
+
+#: ../../../cards.md:282
+msgid "card 6"
+msgstr ""
+
+#: ../../../cards.md:289
+msgid ""
+"::::{card-carousel} 2\n"
+"\n"
+":::{card} card 1\n"
+"content\n"
+":::\n"
+":::{card} card 2\n"
+"Longer\n"
+"\n"
+"content\n"
+":::\n"
+":::{card} card 3\n"
+":::\n"
+":::{card} card 4\n"
+":::\n"
+":::{card} card 5\n"
+":::\n"
+":::{card} card 6\n"
+":::\n"
+"::::\n"
+msgstr ""
+
+#: ../../../cards.md:292
+msgid ""
+".. card-carousel:: 2\n"
+"\n"
+"    .. card:: card 1\n"
+"\n"
+"        content\n"
+"\n"
+"    .. card:: card 2\n"
+"\n"
+"        Longer\n"
+"\n"
+"        content\n"
+"\n"
+"    .. card:: card 3\n"
+"\n"
+"    .. card:: card 4\n"
+"\n"
+"    .. card:: card 5\n"
+"\n"
+"    .. card:: card 6\n"
+msgstr ""
+
+#: ../../../cards.md:300
+msgid "`card` options"
+msgstr ""
+
+#: ../../../cards.md:302
+msgid "width"
+msgstr ""
+
+#: ../../../cards.md:303
+msgid ""
+"The width that the card should take up (in %): auto, 25%, 50%, 75%, 100%."
+msgstr ""
+
+#: ../../../cards.md:305
+msgid "margin"
+msgstr ""
+
+#: ../../../cards.md:306
+msgid ""
+"Outer margin of grid. One (all) or four (top bottom left right) values from: "
+"0, 1, 2, 3, 4, 5, auto."
+msgstr ""
+
+#: ../../../cards.md:309
+msgid "text-align"
+msgstr ""
+
+#: ../../../cards.md:310
+msgid "Default horizontal text alignment: left, right, center or justify"
+msgstr ""
+
+#: ../../../cards.md:312
+msgid "img-background"
+msgstr ""
+
+#: ../../../cards.md:313 ../../../cards.md:319
+msgid ""
+"A URI (relative file path or URL) to an image to be placed below the content."
+msgstr ""
+
+#: ../../../cards.md:315
+msgid "img-top"
+msgstr ""
+
+#: ../../../cards.md:316
+msgid ""
+"A URI (relative file path or URL) to an image to be placed above the content."
+msgstr ""
+
+#: ../../../cards.md:318
+msgid "img-bottom"
+msgstr ""
+
+#: ../../../cards.md:321
+msgid "img-alt"
+msgstr ""
+
+#: ../../../cards.md:322
+msgid "Alternative text for the image (that will be used by screen-readers)."
+msgstr ""
+
+#: ../../../cards.md:324
+msgid "link"
+msgstr ""
+
+#: ../../../cards.md:325
+msgid ""
+"Turn the entire card into a clickable link to an external/internal target."
+msgstr ""
+
+#: ../../../cards.md:327
+msgid "link-type"
+msgstr ""
+
+#: ../../../cards.md:328
+msgid "Type of link: `url` (default), `ref`, `doc`, `any`."
+msgstr ""
+
+#: ../../../cards.md:330
+msgid "link-alt"
+msgstr ""
+
+#: ../../../cards.md:331
+msgid "Alternative text for the link (that will be used by screen-readers)."
+msgstr ""
+
+#: ../../../cards.md:333
+msgid "link-new-tab"
+msgstr ""
+
+#: ../../../cards.md:334
+msgid ""
+"Flag. When set, the card link opens in a new browser tab "
+"(`target=\"_blank\"`, `rel=\"noreferrer noopener\"`). Works with all `link-"
+"type` values; has no effect without `link`. Sphinx renders the `rel` "
+"attribute only from version 7.4; browsers already treat `target=\"_blank\"` "
+"links as `noopener`. It affects only HTML-based output (HTML, EPUB); other "
+"formats ignore it. Tell readers the link opens a new tab, for example in "
+"`link-alt`. To open every external link in a new tab, site-wide, see the "
+"[sphinx-new-tab-link](https://pypi.org/project/sphinx-new-tab-link/) "
+"extension."
+msgstr ""
+
+#: ../../../cards.md:344
+msgid "shadow"
+msgstr ""
+
+#: ../../../cards.md:345
+msgid ""
+"The size of the shadow below the card: `none`, `sm` (default), `md`, `lg`."
+msgstr ""
+
+#: ../../../cards.md:347
+msgid "header"
+msgstr ""
+
+#: ../../../cards.md:348
+msgid ""
+"Inline-markup short-hand for a single-line header (equivalent to a `card-"
+"header` directive; the two are mutually exclusive)."
+msgstr ""
+
+#: ../../../cards.md:351
+msgid "footer"
+msgstr ""
+
+#: ../../../cards.md:352
+msgid ""
+"Inline-markup short-hand for a single-line footer (equivalent to a `card-"
+"footer` directive; the two are mutually exclusive)."
+msgstr ""
+
+#: ../../../cards.md:355
+msgid "class-card"
+msgstr ""
+
+#: ../../../cards.md:356
+msgid "Additional CSS classes for the card container element."
+msgstr ""
+
+#: ../../../cards.md:358
+msgid "class-header"
+msgstr ""
+
+#: ../../../cards.md:359
+msgid "Additional CSS classes for the header element."
+msgstr ""
+
+#: ../../../cards.md:361
+msgid "class-body"
+msgstr ""
+
+#: ../../../cards.md:362
+msgid "Additional CSS classes for the body element."
+msgstr ""
+
+#: ../../../cards.md:364
+msgid "class-title"
+msgstr ""
+
+#: ../../../cards.md:365
+msgid "Additional CSS classes for the title element."
+msgstr ""
+
+#: ../../../cards.md:367
+msgid "class-footer"
+msgstr ""
+
+#: ../../../cards.md:368
+msgid "Additional CSS classes for the footer element."
+msgstr ""
+
+#: ../../../cards.md:370
+msgid "class-img-top"
+msgstr ""
+
+#: ../../../cards.md:371
+msgid "Additional CSS classes for the top image (if present)."
+msgstr ""
+
+#: ../../../cards.md:373
+msgid "class-img-bottom"
+msgstr ""
+
+#: ../../../cards.md:374
+msgid "Additional CSS classes for the bottom image (if present)."
+msgstr ""
+
+#: ../../../cards.md:378
+msgid "Legacy separator syntax"
+msgstr ""
+
+#: ../../../cards.md:381
+msgid ""
+"Prefer the `card-header` / `card-footer` directives (above). The `^^^` / `++"
+"+` separators are **deprecated**: they scan the card's raw source lines, so "
+"a `^^^` or `+++` line inside nested content (for example a code block) is "
+"mistaken for a separator, and they have no meaning to non-Python MyST tools."
+msgstr ""
+
+#: ../../../cards.md:387
+msgid ""
+"Historically, a card header and footer were delimited within the body "
+"itself: all content before the first line of three-or-more `^^^` became the "
+"header, and all content after the final line of three-or-more `+++` became "
+"the footer."
+msgstr ""
+
+#: ../../../cards.md:399
+msgid ""
+"This syntax is still recognised by default, but emits a deprecation warning "
+"(once per document). The rewrite is mechanical:"
+msgstr ""
+
+#: ../../../cards.md:402
+msgid "Legacy separators"
+msgstr ""
+
+#: ../../../cards.md:402
+msgid "Header / footer directives"
+msgstr ""
+
+#: ../../../cards.md:402
+msgid "`Header` above a `^^^` line"
+msgstr ""
+
+#: ../../../cards.md:404
+msgid "a `card-header` directive"
+msgstr ""
+
+#: ../../../cards.md:404
+msgid "`Footer` below a `+++` line"
+msgstr ""
+
+#: ../../../cards.md:405
+msgid "a `card-footer` directive"
+msgstr ""
+
+#: ../../../cards.md:0
+msgid "MyST"
+msgstr ""
+
+#: ../../../cards.md:409
+msgid ""
+":::{card} Card Title\n"
+"Header\n"
+"^^^\n"
+"Body\n"
+"+++\n"
+"Footer\n"
+":::\n"
+msgstr ""
+
+#: ../../../cards.md:418 ../../../cards.md:444
+msgid "becomes"
+msgstr ""
+
+#: ../../../cards.md:419
+msgid ""
+"::::{card} Card Title\n"
+"\n"
+":::{card-header}\n"
+"Header\n"
+":::\n"
+"\n"
+"Body\n"
+"\n"
+":::{card-footer}\n"
+"Footer\n"
+":::\n"
+"::::\n"
+msgstr ""
+
+#: ../../../cards.md:0
+msgid "reStructuredText"
+msgstr ""
+
+#: ../../../cards.md:435
+msgid ""
+".. card:: Card Title\n"
+"\n"
+"   Header\n"
+"   ^^^\n"
+"   Body\n"
+"   +++\n"
+"   Footer\n"
+msgstr ""
+
+#: ../../../cards.md:445
+msgid ""
+".. card:: Card Title\n"
+"\n"
+"   .. card-header::\n"
+"\n"
+"      Header\n"
+"\n"
+"   Body\n"
+"\n"
+"   .. card-footer::\n"
+"\n"
+"      Footer\n"
+msgstr ""
+
+#: ../../../cards.md:461
+msgid ""
+"Migrate, then flip the flag While the legacy separators are enabled (the "
+"default), the raw-line scan runs on **every** card, so a stray column-0 "
+"`^^^` or `+++` — even inside a code block, and even in a card that has "
+"already migrated to the `card-header` / `card-footer` directives — is still "
+"treated as a separator (mis-splitting the card and emitting a mixed-syntax "
+"warning). The single-parse robustness is only realized once the separators "
+"are turned off."
+msgstr ""
+
+#: ../../../cards.md:469
+msgid ""
+"The recommended order is therefore **migrate first, then flip the flag**: "
+"convert every card to the directives, then set `sd_card_legacy_separators = "
+"False` in your `conf.py`."
+msgstr ""
+
+#: ../../../cards.md:474
+msgid ""
+"With `sd_card_legacy_separators = False`, `^^^` / `+++` lines are no longer "
+"scanned — but they do **not** reliably render as literal text, so migrate "
+"before flipping:"
+msgstr ""
+
+#: ../../../cards.md:478
+msgid "in MyST, a bare `+++` line is a block break and silently disappears;"
+msgstr ""
+
+#: ../../../cards.md:479
+msgid ""
+"in reStructuredText, a `^^^` / `++++` line can raise a docutils `CRITICAL` "
+"\"Unexpected section title or transition\" error."
+msgstr ""
+
+#: ../../../cards.md:482
+msgid ""
+"Builds that treat warnings as errors The deprecation warning is **on by "
+"default**, so a build run with `-W` (or `--fail-on-warning`) fails while any "
+"document still uses `^^^` / `+++`. There are two remedies:"
+msgstr ""
+
+#: ../../../cards.md:487
+msgid ""
+"migrate those cards to the `card-header` / `card-footer` directives (above); "
+"or"
+msgstr ""
+
+#: ../../../cards.md:488
+msgid ""
+"keep the legacy syntax for now and silence the warning in your `conf.py`:"
+msgstr ""
+
+#: ../../../cards.md:490
+msgid "suppress_warnings = [\"design.card_legacy\"]\n"
+msgstr ""
+
+#: ../../../cards.md:495
+msgid ""
+"**Timeline**: deprecated now (default on) → default off at `1.0` → removed "
+"at `2.0`."
+msgstr ""
