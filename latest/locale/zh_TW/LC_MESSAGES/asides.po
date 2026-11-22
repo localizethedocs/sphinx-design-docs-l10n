@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../../asides.md:0
 msgid "Syntax"
-msgstr ""
+msgstr "語法"
 
 #: ../../../asides.md:22
 msgid ""
