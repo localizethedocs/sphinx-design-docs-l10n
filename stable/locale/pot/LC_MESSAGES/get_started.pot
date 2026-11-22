@@ -1,0 +1,470 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Executable Book Project
+# This file is distributed under the same license as the Sphinx Design package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Design stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-22 08:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../get_started.md:1
+msgid "Getting Started"
+msgstr ""
+
+#: ../../../get_started.md:3
+msgid "Chris Sewell"
+msgstr ""
+
+#: ../../../get_started.md:3
+msgid "today"
+msgstr ""
+
+#: ../../../get_started.md:3
+msgid "1 min read"
+msgstr ""
+
+#: ../../../get_started.md:12
+msgid "Usage"
+msgstr ""
+
+#: ../../../get_started.md:14
+msgid ""
+"Simply pip install `sphinx-design` and add the extension to your `conf.py`:"
+msgstr ""
+
+#: ../../../get_started.md:16
+msgid "extensions = [\"sphinx_design\"]\n"
+msgstr ""
+
+#: ../../../get_started.md:20
+msgid ""
+"For using with [MyST Parser](https://github.com/executablebooks/myst-"
+"parser), for Markdown documentation, it is recommended to use the "
+"`colon_fence` syntax extension:"
+msgstr ""
+
+#: ../../../get_started.md:22
+msgid ""
+"extensions = [\"myst_parser\", \"sphinx_design\"]\n"
+"myst_enable_extensions = [\"colon_fence\"]\n"
+msgstr ""
+
+#: ../../../get_started.md:28
+msgid ""
+"The MyST Markdown examples in this documentation assume that certain "
+"optional [MyST syntax extensions](https://myst-parser.readthedocs.io/en/"
+"latest/syntax/optional.html) are enabled — extend the "
+"`myst_enable_extensions` list shown above with them as needed:"
+msgstr ""
+
+#: ../../../get_started.md:30
+msgid ""
+"`colon_fence`: used by all examples, to write directives delimited by `:::` "
+"fences"
+msgstr ""
+
+#: ../../../get_started.md:31
+msgid ""
+"`html_image`: only for examples using raw HTML `<img>` tags, such as the "
+"avatar images in [CSS Classes](./css_classes.md)"
+msgstr ""
+
+#: ../../../get_started.md:32
+msgid ""
+"`attrs_inline`: only for examples adding attributes to inline elements, such "
+"as the links to synchronised [Tabs](./tabs.md)"
+msgstr ""
+
+#: ../../../get_started.md:35
+msgid "Configuration"
+msgstr ""
+
+#: ../../../get_started.md:37
+msgid "Global options"
+msgstr ""
+
+#: ../../../get_started.md:39
+msgid ""
+"All global configuration options are prefixed with `sd_`, and can be set in "
+"your `conf.py`. Values are always simple, TOML-compatible, data types:"
+msgstr ""
+
+#: ../../../get_started.md:43
+msgid "Name"
+msgstr ""
+
+#: ../../../get_started.md:43
+msgid "Type"
+msgstr ""
+
+#: ../../../get_started.md:43
+msgid "Default"
+msgstr ""
+
+#: ../../../get_started.md:43
+msgid "Description"
+msgstr ""
+
+#: ../../../get_started.md:43
+msgid "`sd_custom_directives`"
+msgstr ""
+
+#: ../../../get_started.md:45
+msgid "`dict[str, dict]`"
+msgstr ""
+
+#: ../../../get_started.md:45
+msgid "`{}`"
+msgstr ""
+
+#: ../../../get_started.md:45
+msgid "Custom directives, inheriting from sphinx-design ones"
+msgstr ""
+
+#: ../../../get_started.md:45
+msgid "`sd_fontawesome_source`"
+msgstr ""
+
+#: ../../../get_started.md:46 ../../../get_started.md:47
+#: ../../../get_started.md:48 ../../../get_started.md:50
+msgid "`str`"
+msgstr ""
+
+#: ../../../get_started.md:46
+msgid "`'none'`"
+msgstr ""
+
+#: ../../../get_started.md:46
+msgid ""
+"How sphinx-design loads the FontAwesome CSS: \"none\" (default, provided by "
+"you/your theme) or \"cdn\""
+msgstr ""
+
+#: ../../../get_started.md:46
+msgid "`sd_fontawesome_cdn_url`"
+msgstr ""
+
+#: ../../../get_started.md:47
+msgid ""
+"`'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'`"
+msgstr ""
+
+#: ../../../get_started.md:47
+msgid "FontAwesome CSS URL to add when sd_fontawesome_source=\"cdn\""
+msgstr ""
+
+#: ../../../get_started.md:47
+msgid "`sd_fontawesome_version`"
+msgstr ""
+
+#: ../../../get_started.md:48
+msgid "`'as-named'`"
+msgstr ""
+
+#: ../../../get_started.md:48
+msgid ""
+"FontAwesome class scheme emitted by the icon roles: \"as-named\" (default, "
+"role name emitted verbatim), \"4\", \"5\" or \"6\""
+msgstr ""
+
+#: ../../../get_started.md:48
+msgid "`sd_fontawesome_latex`"
+msgstr ""
+
+#: ../../../get_started.md:49
+msgid "`bool | str`"
+msgstr ""
+
+#: ../../../get_started.md:49
+msgid "`False`"
+msgstr ""
+
+#: ../../../get_started.md:49
+msgid ""
+"Render fontawesome icons in LaTeX output: False/\"none\", True/"
+"\"fontawesome\", or \"fontawesome5\""
+msgstr ""
+
+#: ../../../get_started.md:49
+msgid "`sd_tabs_storage_prefix`"
+msgstr ""
+
+#: ../../../get_started.md:50
+msgid "`'sphinx-design-tab-id-'`"
+msgstr ""
+
+#: ../../../get_started.md:50
+msgid ""
+"localStorage key prefix for persisting synced tab selections (an empty "
+"string disables persistence)"
+msgstr ""
+
+#: ../../../get_started.md:50
+msgid "`sd_card_legacy_separators`"
+msgstr ""
+
+#: ../../../get_started.md:51
+msgid "`bool`"
+msgstr ""
+
+#: ../../../get_started.md:51
+msgid "`True`"
+msgstr ""
+
+#: ../../../get_started.md:51
+msgid ""
+"Honour the legacy '^^^'/'+++' card header/footer separators (deprecated; "
+"prefer the 'card-header'/'card-footer' directives)"
+msgstr ""
+
+#: ../../../get_started.md:44
+msgid "Hiding the page title"
+msgstr ""
+
+#: ../../../get_started.md:46
+msgid "To hide the title header of a page, add to the top of the page:"
+msgstr ""
+
+#: ../../../get_started.md:0
+msgid "MyST Markdown"
+msgstr ""
+
+#: ../../../get_started.md:51
+msgid ""
+"---\n"
+"sd_hide_title: true\n"
+"---\n"
+msgstr ""
+
+#: ../../../get_started.md:0
+msgid "RestructuredText"
+msgstr ""
+
+#: ../../../get_started.md:58
+msgid ":sd_hide_title:\n"
+msgstr ""
+
+#: ../../../get_started.md:65
+msgid "Creating custom directives"
+msgstr ""
+
+#: ../../../get_started.md:70
+msgid ""
+"You can use the `sd_custom_directives` configuration option in your "
+"`conf.py` to add custom directives, with default option values:"
+msgstr ""
+
+#: ../../../get_started.md:72
+msgid ""
+"sd_custom_directives = {\n"
+"    \"dropdown-syntax\": {\n"
+"        \"inherit\": \"dropdown\",\n"
+"        \"argument\": \"Syntax\",\n"
+"        \"options\": {\n"
+"            \"color\": \"primary\",\n"
+"            \"icon\": \"code\",\n"
+"        },\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#: ../../../get_started.md:85
+msgid ""
+"The key is the new directive name to add, and the value is a dictionary with "
+"the following keys:"
+msgstr ""
+
+#: ../../../get_started.md:87
+msgid "`inherit`: The directive to inherit from (e.g. `dropdown`)"
+msgstr ""
+
+#: ../../../get_started.md:88
+msgid ""
+"`argument`: The default argument (optional, only for directives that take a "
+"single argument)"
+msgstr ""
+
+#: ../../../get_started.md:89
+msgid "`options`: A dictionary of default options for the directive (optional)"
+msgstr ""
+
+#: ../../../get_started.md:92
+msgid ""
+"For presets beyond default option values, see the [sphinx-ub-directives]"
+"(https://sphinx-ub-directives.readthedocs.io) package, from the [sphinx-"
+"needs](https://github.com/useblocks/sphinx-needs) project, whose directive "
+"presets accept sphinx-design directives (such as `dropdown`) as a base. It "
+"adds appended and forced option values, need-type bases (with sphinx-needs), "
+"and template directives, and its presets can also be configured in "
+"`ubproject.toml`, which [ubCode](https://ubcode.useblocks.com/) reads. To "
+"preset a badge's tooltip, see the badge roles' {ref}`tooltip role option <sd-"
+"badge-tooltip-option>`."
+msgstr ""
+
+#: ../../../get_started.md:102
+msgid "Supported browsers"
+msgstr ""
+
+#: ../../../get_started.md:104
+msgid ""
+"sphinx-design targets [**Baseline** Widely Available](https://web.dev/"
+"baseline) web features — those interoperable across Chrome, Edge, Firefox "
+"and Safari for at least 30 months (in practice, the evergreen browsers of "
+"roughly the last 2½ years). Internet Explorer is not supported."
+msgstr ""
+
+#: ../../../get_started.md:109
+msgid ""
+"Individual features may additionally use *Baseline Newly Available* CSS "
+"where it degrades gracefully; such exceptions are noted in the relevant "
+"feature's documentation."
+msgstr ""
+
+#: ../../../get_started.md:113
+msgid "Migrating from sphinx-panels"
+msgstr ""
+
+#: ../../../get_started.md:115
+msgid ""
+"This package arose as an iteration on [sphinx-panels](https://github.com/"
+"executablebooks/sphinx-panels), with the intention to make it more flexible, "
+"easier to use, and minimise CSS clashes wth sphinx themes."
+msgstr ""
+
+#: ../../../get_started.md:117
+msgid "Notable changes:"
+msgstr ""
+
+#: ../../../get_started.md:119
+msgid "Reduce direct use of CSS classes"
+msgstr ""
+
+#: ../../../get_started.md:121
+msgid "These are replaced by the use of directive options, which are:"
+msgstr ""
+
+#: ../../../get_started.md:123
+msgid "Easier to understand"
+msgstr ""
+
+#: ../../../get_started.md:124
+msgid "Easier to validate"
+msgstr ""
+
+#: ../../../get_started.md:125
+msgid "Easier to work with non-HTML outputs"
+msgstr ""
+
+#: ../../../get_started.md:126
+msgid "Easier to improve/refactor"
+msgstr ""
+
+#: ../../../get_started.md:128
+msgid "`panel` directive replaced"
+msgstr ""
+
+#: ../../../get_started.md:130
+msgid ""
+"The `panel` directive is replaced by the use of the top-level `grid` "
+"directive, then using `grid-item-card` directive children, rather than "
+"delimiting cards by `---`."
+msgstr ""
+
+#: ../../../get_started.md:133
+msgid ""
+"If no card is needed, then the `grid-item` directive can be used instead and "
+"`card` can be also used independently of grids."
+msgstr ""
+
+#: ../../../get_started.md:135
+msgid ""
+"Approximately, `.. panels::` is equivalent to `.. grid:: 1 2 2 2` with "
+"option `:gutter: 2`."
+msgstr ""
+
+#: ../../../get_started.md:137
+msgid "`tabbed` directive replaced"
+msgstr ""
+
+#: ../../../get_started.md:139
+msgid ""
+"The `tabbed` directive is replaced by the use of the top-level `tab-set` "
+"directive, then using `tab-item` directive children."
+msgstr ""
+
+#: ../../../get_started.md:142
+msgid "The `:sync:` option allows to synchronize tab selection across sets."
+msgstr ""
+
+#: ../../../get_started.md:144
+msgid ""
+"The `tab-set-code` directive provides a shorthand for synced code examples."
+msgstr ""
+
+#: ../../../get_started.md:146
+msgid "`link-button` directive replaced"
+msgstr ""
+
+#: ../../../get_started.md:148
+msgid ""
+"The `link-button` directive is replaced by the use of `button-ref`/`button-"
+"link`."
+msgstr ""
+
+#: ../../../get_started.md:150
+msgid "Directive options have also been added to replace the use of classes:"
+msgstr ""
+
+#: ../../../get_started.md:152
+msgid "`stretched-link` -> `:click-parent:`"
+msgstr ""
+
+#: ../../../get_started.md:153
+msgid "`btn-block` -> `:expand:`"
+msgstr ""
+
+#: ../../../get_started.md:155
+msgid "`octicon` icon role"
+msgstr ""
+
+#: ../../../get_started.md:157
+msgid ""
+"The default SVGs produced are now sized relative to the surrounding text "
+"(i.e. using `1em`). The syntax for specifying a custom size and adding "
+"classes is also changed."
+msgstr ""
+
+#: ../../../get_started.md:160
+msgid ""
+"This is similar for favicon icons, where the `,` delimiter is also replaced "
+"by `;`, e.g. ``:fa:`name,class` `` -> ``:fa:`name;class` ``."
+msgstr ""
+
+#: ../../../get_started.md:162
+msgid "Improved CSS"
+msgstr ""
+
+#: ../../../get_started.md:164
+msgid ""
+"Updated Bootstrap CSS from v4 -> v5, which in particular allows top-level "
+"grid to define both column numbers and gutter sizes."
+msgstr ""
+
+#: ../../../get_started.md:167
+msgid ""
+"All CSS classes are prefixed with `sd-` (no clash with other theme/extension "
+"CSS)"
+msgstr ""
+
+#: ../../../get_started.md:169
+msgid "All colors use CSS variables (customisable)"
+msgstr ""
