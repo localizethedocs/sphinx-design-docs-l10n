@@ -1,0 +1,535 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Executable Book Project
+# This file is distributed under the same license as the Sphinx Design package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Design stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-22 08:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../tabs.md:3
+msgid "Tabs"
+msgstr ""
+
+#: ../../../tabs.md:5
+msgid ""
+"Tabs organize and allow navigation between groups of content that are "
+"related and at the same level of hierarchy. Each tab should contain content "
+"that is distinct from other tabs in a set."
+msgstr ""
+
+#: ../../../tabs.md:0
+msgid "Label1"
+msgstr ""
+
+#: ../../../tabs.md:11 ../../../tabs.md:47 ../../../tabs.md:103
+#: ../../../tabs.md:120 ../../../tabs.md:219 ../../../tabs.md:243
+#: ../../../tabs.md:264
+msgid "Content 1"
+msgstr ""
+
+#: ../../../tabs.md:0
+msgid "Label2"
+msgstr ""
+
+#: ../../../tabs.md:15 ../../../tabs.md:51 ../../../tabs.md:109
+#: ../../../tabs.md:126 ../../../tabs.md:225 ../../../tabs.md:249
+#: ../../../tabs.md:270 ../../../tabs.md:296
+msgid "Content 2"
+msgstr ""
+
+#: ../../../tabs.md:0
+msgid "Syntax"
+msgstr ""
+
+#: ../../../tabs.md:23
+msgid ""
+"::::{tab-set}\n"
+"\n"
+":::{tab-item} Label1\n"
+"Content 1\n"
+":::\n"
+"\n"
+":::{tab-item} Label2\n"
+"Content 2\n"
+":::\n"
+"\n"
+"::::\n"
+msgstr ""
+
+#: ../../../tabs.md:26
+msgid ""
+".. tab-set::\n"
+"\n"
+"    .. tab-item:: Label1\n"
+"\n"
+"        Content 1\n"
+"\n"
+"    .. tab-item:: Label2\n"
+"\n"
+"        Content 2\n"
+msgstr ""
+
+#: ../../../tabs.md:32
+msgid ""
+"See the [Material Design](https://material.io/components/tabs) description "
+"for further details."
+msgstr ""
+
+#: ../../../tabs.md:36
+msgid "Vertical Tabs"
+msgstr ""
+
+#: ../../../tabs.md:39
+msgid ""
+"Add `:orientation: vertical` to a `tab-set` or `tab-set-code` to stack the "
+"labels down a rail on the left (on the right on right-to-left pages), with "
+"the selected content beside them. This suits sets holding more labels than "
+"fit on one line, where the horizontal layout wraps them into a strip that is "
+"hard to scan."
+msgstr ""
+
+#: ../../../tabs.md:0
+msgid "A longer label"
+msgstr ""
+
+#: ../../../tabs.md:55
+msgid "Content 3"
+msgstr ""
+
+#: ../../../tabs.md:63
+msgid ""
+"::::{tab-set}\n"
+":orientation: vertical\n"
+"\n"
+":::{tab-item} Label1\n"
+"Content 1\n"
+":::\n"
+"\n"
+":::{tab-item} Label2\n"
+"Content 2\n"
+":::\n"
+"\n"
+"::::\n"
+msgstr ""
+
+#: ../../../tabs.md:66
+msgid ""
+".. tab-set::\n"
+"    :orientation: vertical\n"
+"\n"
+"    .. tab-item:: Label1\n"
+"\n"
+"        Content 1\n"
+"\n"
+"    .. tab-item:: Label2\n"
+"\n"
+"        Content 2\n"
+msgstr ""
+
+#: ../../../tabs.md:72
+msgid ""
+"The rail is as wide as its longest label, up to 35% of the set; a longer "
+"label wraps at its spaces. Below the `md` breakpoint (a viewport 768px wide) "
+"the set falls back to the horizontal layout, two columns being too narrow to "
+"read at that width. The breakpoint follows the viewport, not the set's "
+"container, so a vertical set in a narrow column (a grid cell, say) stays "
+"vertical on a wide screen. Themes that restyle the tab labels themselves, "
+"such as pydata-sphinx-theme and sphinx-book-theme, may draw them less neatly "
+"in the rail until they style `sd-tab-set-vertical` too."
+msgstr ""
+
+#: ../../../tabs.md:77
+msgid "Synchronised Tabs"
+msgstr ""
+
+#: ../../../tabs.md:79
+msgid ""
+"The Selection of tab items can be synchronised across multiple tab-sets. For "
+"a `tab-item` to be synchronisable, add the `sync` option to the `tab-item` "
+"directive with a key unique to that set. Now when you select a tab in one "
+"set, tabs in other sets with the same key will be selected."
+msgstr ""
+
+#: ../../../tabs.md:84
+msgid "Synchronisation requires that JavaScript is enabled."
+msgstr ""
+
+#: ../../../tabs.md:88
+msgid ""
+"To synchronise tabs only across certain tab-sets, add the `:sync-group:` "
+"option to each `tab-set` directive with the same group name, such as `:sync-"
+"group: category`."
+msgstr ""
+
+#: ../../../tabs.md:90
+msgid ""
+"You can also add an [HTML query string](https://en.wikipedia.org/wiki/"
+"Query_string) to the end of the page's URL, to automatically select a tab "
+"with a specific key across all tab-sets of the group, for example:"
+msgstr ""
+
+#: ../../../tabs.md:93
+msgid ""
+"[`?category=key1#synchronised-tabs`](?category=key1#synchronised-tabs)"
+"{.external}"
+msgstr ""
+
+#: ../../../tabs.md:94
+msgid ""
+"[`?category=key2#synchronised-tabs`](?category=key2#synchronised-tabs)"
+"{.external}"
+msgstr ""
+
+#: ../../../tabs.md:134
+msgid ""
+"::::{tab-set}\n"
+":sync-group: category\n"
+"\n"
+":::{tab-item} Label1\n"
+":sync: key1\n"
+"\n"
+"Content 1\n"
+":::\n"
+"\n"
+":::{tab-item} Label2\n"
+":sync: key2\n"
+"\n"
+"Content 2\n"
+":::\n"
+"\n"
+"::::\n"
+"\n"
+"::::{tab-set}\n"
+":sync-group: category\n"
+"\n"
+":::{tab-item} Label1\n"
+":sync: key1\n"
+"\n"
+"Content 1\n"
+":::\n"
+"\n"
+":::{tab-item} Label2\n"
+":sync: key2\n"
+"\n"
+"Content 2\n"
+":::\n"
+"\n"
+"::::\n"
+msgstr ""
+
+#: ../../../tabs.md:137
+msgid ""
+".. tab-set::\n"
+"    :sync-group: category\n"
+"\n"
+"    .. tab-item:: Label1\n"
+"        :sync: key1\n"
+"\n"
+"        Content 1\n"
+"\n"
+"    .. tab-item:: Label2\n"
+"        :sync: key2\n"
+"\n"
+"        Content 2\n"
+"\n"
+".. tab-set::\n"
+"    :sync-group: category\n"
+"\n"
+"    .. tab-item:: Label1\n"
+"        :sync: key1\n"
+"\n"
+"        Content 1\n"
+"\n"
+"    .. tab-item:: Label2\n"
+"        :sync: key2\n"
+"\n"
+"        Content 2\n"
+msgstr ""
+
+#: ../../../tabs.md:143
+msgid "Linking to synchronised tabs"
+msgstr ""
+
+#: ../../../tabs.md:145
+msgid ""
+"To author a link that pre-selects a tab, append the query string (and "
+"optionally a page anchor) to the URL of the **built** HTML page. Sphinx "
+"referencing roles, such as `ref` and `doc`, cannot output URLs containing "
+"query strings, so instead write the URL directly:"
+msgstr ""
+
+#: ../../../tabs.md:149
+msgid ""
+"In MyST Markdown, add an `external` class to the link (using the "
+"[`attrs_inline` extension](https://myst-parser.readthedocs.io/en/latest/"
+"syntax/optional.html)), so that the URL is output as-is, rather than being "
+"resolved as a cross-reference."
+msgstr ""
+
+#: ../../../tabs.md:150
+msgid "In reStructuredText, use a standard (external) hyperlink."
+msgstr ""
+
+#: ../../../tabs.md:153
+msgid ""
+"[Open with key2 selected](tabs.html?category=key2#synchronised-tabs)"
+"{.external}"
+msgstr ""
+
+#: ../../../tabs.md:156
+msgid "`Open with key2 selected <tabs.html?category=key2#synchronised-tabs>`_"
+msgstr ""
+
+#: ../../../tabs.md:161
+msgid ""
+"For example: [open the tabs above with `key2` selected](tabs.html?"
+"category=key2#synchronised-tabs){.external}"
+msgstr ""
+
+#: ../../../tabs.md:164
+msgid ""
+"Such URLs are relative to the location of the current page in the built HTML "
+"output, not to the source files (for example, a page in a sub-folder would "
+"require `../tabs.html?...`). They are not checked by Sphinx, so they will "
+"break silently if the target page is moved, and they do not apply to other "
+"output formats."
+msgstr ""
+
+#: ../../../tabs.md:170
+msgid "Tabbed code examples"
+msgstr ""
+
+#: ../../../tabs.md:172
+msgid ""
+"The `tab-set-code` directive provides a shorthand for synced code examples. "
+"You can place any directives in a `tab-set-code` that produce a "
+"`literal_block` node with a `language` attribute, for example `code`, `code-"
+"block` and `literalinclude`. Tabs will be labelled and synchronised by the "
+"`language` attribute (in upper-case)."
+msgstr ""
+
+#: ../../../tabs.md:177
+msgid ""
+"You can also add an [HTML query string](https://en.wikipedia.org/wiki/"
+"Query_string) to the end of the page's URL, to automatically select a tab "
+"with a specific code across all tab-sets of the group, for example:"
+msgstr ""
+
+#: ../../../tabs.md:180
+msgid ""
+"[`?code=markdown#tabbed-code-examples`](?code=markdown#tabbed-code-examples)"
+"{.external}"
+msgstr ""
+
+#: ../../../tabs.md:181
+msgid ""
+"[`?code=rst#tabbed-code-examples`](?code=rst#tabbed-code-examples){.external}"
+msgstr ""
+
+#: ../../../tabs.md:0
+msgid "Markdown"
+msgstr ""
+
+#: ../../../tabs.md:190
+msgid ""
+"````{tab-set-code}\n"
+"\n"
+"```{literalinclude} ./snippet.py\n"
+":language: python\n"
+"```\n"
+"\n"
+"```{code-block} javascript\n"
+"a = 1;\n"
+"```\n"
+"\n"
+"````\n"
+msgstr ""
+
+#: ../../../tabs.md:0
+msgid "RST"
+msgstr ""
+
+#: ../../../tabs.md:198
+msgid ""
+".. tab-set-code::\n"
+"\n"
+"    .. literalinclude:: ./snippet.py\n"
+"        :language: python\n"
+"\n"
+"    .. code-block:: javascript\n"
+"\n"
+"        a = 1;\n"
+msgstr ""
+
+#: ../../../tabs.md:205
+msgid "Tabs in other components"
+msgstr ""
+
+#: ../../../tabs.md:207
+msgid ""
+"Tabs can be nested inside other components, such as inside [dropdowns](./"
+"dropdowns.md) or within [grid items](./grids.md)."
+msgstr ""
+
+#: ../../../tabs.md:0
+msgid "Tabs in dropdown"
+msgstr ""
+
+#: ../../../tabs.md:212
+msgid "Paragraph"
+msgstr ""
+
+#: ../../../tabs.md:236
+msgid "Initial paragraph"
+msgstr ""
+
+#: ../../../tabs.md:275
+msgid "Ending paragraph"
+msgstr ""
+
+#: ../../../tabs.md:281
+msgid "Tab set, within tab set:"
+msgstr ""
+
+#: ../../../tabs.md:0
+msgid "Label 1"
+msgstr ""
+
+#: ../../../tabs.md:0
+msgid "Label 1a"
+msgstr ""
+
+#: ../../../tabs.md:290
+msgid "Content 1a"
+msgstr ""
+
+#: ../../../tabs.md:0
+msgid "Label 1b"
+msgstr ""
+
+#: ../../../tabs.md:293
+msgid "Content 1b"
+msgstr ""
+
+#: ../../../tabs.md:0
+msgid "Label 2"
+msgstr ""
+
+#: ../../../tabs.md:299
+msgid "`tab-set` options"
+msgstr ""
+
+#: ../../../tabs.md:301 ../../../tabs.md:315
+msgid "orientation"
+msgstr ""
+
+#: ../../../tabs.md:302 ../../../tabs.md:316
+msgid "`horizontal` (default) or `vertical`, see {ref}`tabs-vertical`."
+msgstr ""
+
+#: ../../../tabs.md:304 ../../../tabs.md:318
+msgid "sync-group"
+msgstr ""
+
+#: ../../../tabs.md:305
+msgid "A group name for synchronised tab sets (default `tab`)."
+msgstr ""
+
+#: ../../../tabs.md:307
+msgid "class"
+msgstr ""
+
+#: ../../../tabs.md:308 ../../../tabs.md:339
+msgid "Additional CSS classes for the container element."
+msgstr ""
+
+#: ../../../tabs.md:310
+msgid "`tab-set-code` options"
+msgstr ""
+
+#: ../../../tabs.md:312
+msgid "no-sync"
+msgstr ""
+
+#: ../../../tabs.md:313
+msgid "Disable synchronisation of tabs."
+msgstr ""
+
+#: ../../../tabs.md:319
+msgid "A group name for synchronised tab sets (default `code`)."
+msgstr ""
+
+#: ../../../tabs.md:321
+msgid "class-set"
+msgstr ""
+
+#: ../../../tabs.md:322
+msgid "Additional CSS classes for the set container element."
+msgstr ""
+
+#: ../../../tabs.md:324
+msgid "class-item"
+msgstr ""
+
+#: ../../../tabs.md:325
+msgid "Additional CSS classes for the item container element."
+msgstr ""
+
+#: ../../../tabs.md:327
+msgid "`tab-item` options"
+msgstr ""
+
+#: ../../../tabs.md:329
+msgid "selected"
+msgstr ""
+
+#: ../../../tabs.md:330
+msgid "a flag indicating whether the tab should be selected by default."
+msgstr ""
+
+#: ../../../tabs.md:332
+msgid "sync"
+msgstr ""
+
+#: ../../../tabs.md:333
+msgid "A key that is used to sync the selected tab across multiple tab-sets."
+msgstr ""
+
+#: ../../../tabs.md:335
+msgid "name"
+msgstr ""
+
+#: ../../../tabs.md:336
+msgid "Set a reference-able name for the dropdown container."
+msgstr ""
+
+#: ../../../tabs.md:338
+msgid "class-container"
+msgstr ""
+
+#: ../../../tabs.md:341
+msgid "class-label"
+msgstr ""
+
+#: ../../../tabs.md:342
+msgid "Additional CSS classes for the label element."
+msgstr ""
+
+#: ../../../tabs.md:344
+msgid "class-content"
+msgstr ""
+
+#: ../../../tabs.md:345
+msgid "Additional CSS classes for the content element."
+msgstr ""
