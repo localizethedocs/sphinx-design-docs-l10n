@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Executable Book Project
+# This file is distributed under the same license as the Sphinx Design package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Design stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-22 08:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../testing.md:1
+msgid "Testing utilities"
+msgstr ""
+
+#: ../../../testing.md:3
+msgid ""
+"`sphinx-design` ships a small, semi-public helper module, "
+"`sphinx_design.testing`, for downstream extensions that write [doctree]"
+"(https://docutils.sourceforge.io/docs/ref/doctree.html) regression tests "
+"(for example [`sphinx-design-elements`](https://github.com/tech-writing/"
+"sphinx-design-elements))."
+msgstr ""
+
+#: ../../../testing.md:8
+msgid ""
+"The module has **no dependency on `pytest`** or any test extras, so it can "
+"be imported with only `sphinx_design` installed."
+msgstr ""
+
+#: ../../../testing.md:11
+msgid "`normalize_doctree_xml`"
+msgstr ""
+
+#: ../../../testing.md:13
+msgid ""
+"normalize_doctree_xml(text: str, extra_attributes: Sequence[str] = ()) -> "
+"str\n"
+msgstr ""
+
+#: ../../../testing.md:17
+msgid ""
+"Normalizes pretty-printed doctree XML (e.g. from `document.pformat()`) so "
+"that a single set of regression fixtures works across docutils versions: "
+"docutils 0.22+ serializes boolean node attributes as `\"1\"`/`\"0\"` rather "
+"than `\"True\"`/`\"False\"`, and this rewrites the former back to the "
+"latter. On docutils < 0.22 it is a no-op."
+msgstr ""
+
+#: ../../../testing.md:23
+msgid ""
+"Only known boolean attributes are rewritten, so non-boolean `\"1\"`/`\"0\"` "
+"values (such as text content or numeric attributes) are left untouched. Pass "
+"`extra_attributes` to also normalize boolean attributes on your own custom "
+"nodes."
+msgstr ""
+
+#: ../../../testing.md:28
+msgid "`SphinxBuilder`"
+msgstr ""
+
+#: ../../../testing.md:30
+msgid ""
+"The `SphinxBuilder` wrapper used by sphinx-design's own `sphinx_builder` "
+"pytest fixture is also exposed. It is a thin wrapper around a "
+"`sphinx.testing.util.SphinxTestApp` that you construct yourself (e.g. with "
+"sphinx's `make_app` pytest fixture) — it does not create the project "
+"scaffolding for you — giving convenient access to build status/warnings and "
+"doctrees with source paths normalized for regression comparison."
+msgstr ""
+
+#: ../../../testing.md:37
+msgid "Stability"
+msgstr ""
+
+#: ../../../testing.md:39
+msgid "This is a *semi-public* testing API:"
+msgstr ""
+
+#: ../../../testing.md:41
+msgid ""
+"the **signatures** of the helpers are covered by the deprecation policy;"
+msgstr ""
+
+#: ../../../testing.md:42
+msgid ""
+"the **exact output** of `normalize_doctree_xml` is **not** guaranteed to be "
+"stable across docutils versions -- it exists only to smooth over docutils' "
+"changing serialization for regression testing."
+msgstr ""
+
+#: ../../../testing.md:46
+msgid "Example"
+msgstr ""
+
+#: ../../../testing.md:48
+msgid ""
+"from sphinx_design.testing import normalize_doctree_xml\n"
+"\n"
+"# ``doctree`` is a docutils document, e.g. from a Sphinx build\n"
+"xml = normalize_doctree_xml(doctree.pformat())\n"
+"file_regression.check(xml, extension=\".xml\")\n"
+msgstr ""

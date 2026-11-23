@@ -1,0 +1,184 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Executable Book Project
+# This file is distributed under the same license as the Sphinx Design package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Design stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-22 08:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../additional.md:3
+msgid "Additional"
+msgstr ""
+
+#: ../../../additional.md:5
+msgid ""
+"These are additional components that are not part of the standard Materials "
+"Design or Bootstrap systems."
+msgstr ""
+
+#: ../../../additional.md:7
+msgid "`article-info`"
+msgstr ""
+
+#: ../../../additional.md:9
+msgid ""
+"This directive is used to display a block of information about an article, "
+"normally positioned just below the title of the article (shown below with "
+"non-standard outline)."
+msgstr ""
+
+#: ../../../additional.md:12
+msgid "Executable Books"
+msgstr ""
+
+#: ../../../additional.md:12
+msgid "Jul 24, 2021"
+msgstr ""
+
+#: ../../../additional.md:12
+msgid "5 min read"
+msgstr ""
+
+#: ../../../additional.md:0
+msgid "Syntax"
+msgstr "語法"
+
+#: ../../../additional.md:25
+msgid ""
+"```{article-info}\n"
+":avatar: images/ebp-logo.png\n"
+":avatar-link: https://executablebooks.org/\n"
+":avatar-outline: muted\n"
+":author: Executable Books\n"
+":date: Jul 24, 2021\n"
+":read-time: 5 min read\n"
+":class-container: sd-p-2 sd-outline-muted sd-rounded-1\n"
+"```\n"
+msgstr ""
+
+#: ../../../additional.md:28
+msgid ""
+".. article-info::\n"
+"    :avatar: images/ebp-logo.png\n"
+"    :avatar-link: https://executablebooks.org/\n"
+"    :avatar-outline: muted\n"
+"    :author: Executable Books\n"
+"    :date: Jul 24, 2021\n"
+"    :read-time: 5 min read\n"
+"    :class-container: sd-p-2 sd-outline-muted sd-rounded-1\n"
+msgstr ""
+
+#: ../../../additional.md:34
+msgid ""
+"The `author`, `date`, and `read-time` options are parsed as syntax, so you "
+"can use substitutions like:"
+msgstr ""
+
+#: ../../../additional.md:37
+msgid "`date`"
+msgstr ""
+
+#: ../../../additional.md:38
+msgid "MyST: `` :date: \"{sub-ref}`today`\" ``"
+msgstr ""
+
+#: ../../../additional.md:39
+msgid "RST: `:data: |today|`"
+msgstr ""
+
+#: ../../../additional.md:40
+msgid "`read-time`"
+msgstr ""
+
+#: ../../../additional.md:41
+msgid "MyST: `` :read-time: \"{sub-ref}`wordcount-minutes` min read\" ``"
+msgstr ""
+
+#: ../../../additional.md:43
+msgid "options"
+msgstr ""
+
+#: ../../../additional.md:45
+msgid "avatar"
+msgstr ""
+
+#: ../../../additional.md:46
+msgid ""
+"A URI (relative file path or URL) to an image for use as the avatar (a user "
+"portrait, logo or branded graphic)."
+msgstr ""
+
+#: ../../../additional.md:48
+msgid "avatar-alt"
+msgstr ""
+
+#: ../../../additional.md:49
+msgid "Alternative text for the avatar."
+msgstr ""
+
+#: ../../../additional.md:51
+msgid "avatar-link"
+msgstr ""
+
+#: ../../../additional.md:52
+msgid "A URL to link to if the avatar icon is clicked."
+msgstr ""
+
+#: ../../../additional.md:54
+msgid "avatar-outline"
+msgstr ""
+
+#: ../../../additional.md:55
+msgid "A semantic color to use for the outline of the avatar."
+msgstr ""
+
+#: ../../../additional.md:57
+msgid "author"
+msgstr ""
+
+#: ../../../additional.md:58
+msgid "Text to display in the author of of the article."
+msgstr ""
+
+#: ../../../additional.md:60
+msgid "date"
+msgstr ""
+
+#: ../../../additional.md:61
+msgid "Text to display in the date of the article."
+msgstr ""
+
+#: ../../../additional.md:63
+msgid "read-time"
+msgstr ""
+
+#: ../../../additional.md:64
+msgid "Text to indicate the time to read the article."
+msgstr ""
+
+#: ../../../additional.md:66
+msgid "class-container"
+msgstr ""
+
+#: ../../../additional.md:67
+msgid "Additional CSS classes for the container element."
+msgstr ""
+
+#: ../../../additional.md:69
+msgid "class-avatar"
+msgstr ""
+
+#: ../../../additional.md:70
+msgid "Additional CSS classes for the avatar element."
+msgstr ""
