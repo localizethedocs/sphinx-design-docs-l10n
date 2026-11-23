@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../css_variables.md:1
 msgid "CSS Variables"
-msgstr ""
+msgstr "CSS 變數"
 
 #: ../../../css_variables.md:3
 msgid ""

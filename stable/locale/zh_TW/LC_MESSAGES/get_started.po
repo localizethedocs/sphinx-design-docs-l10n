@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../get_started.md:1
 msgid "Getting Started"
-msgstr ""
+msgstr "開始使用"
 
 #: ../../../get_started.md:3
 msgid "Chris Sewell"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../../get_started.md:16
 msgid "extensions = [\"sphinx_design\"]\n"
-msgstr ""
+msgstr "extensions = [\"sphinx_design\"]\n"
 
 #: ../../../get_started.md:20
 msgid ""
@@ -58,6 +58,8 @@ msgid ""
 "extensions = [\"myst_parser\", \"sphinx_design\"]\n"
 "myst_enable_extensions = [\"colon_fence\"]\n"
 msgstr ""
+"extensions = [\"myst_parser\", \"sphinx_design\"]\n"
+"myst_enable_extensions = [\"colon_fence\"]\n"
 
 #: ../../../get_started.md:28
 msgid ""
@@ -229,7 +231,7 @@ msgstr ""
 
 #: ../../../get_started.md:44
 msgid "Hiding the page title"
-msgstr ""
+msgstr "隱藏頁面題名"
 
 #: ../../../get_started.md:46
 msgid "To hide the title header of a page, add to the top of the page:"
@@ -237,7 +239,7 @@ msgstr ""
 
 #: ../../../get_started.md:0
 msgid "MyST Markdown"
-msgstr ""
+msgstr "MyST Markdown"
 
 #: ../../../get_started.md:51
 msgid ""
@@ -245,6 +247,9 @@ msgid ""
 "sd_hide_title: true\n"
 "---\n"
 msgstr ""
+"---\n"
+"sd_hide_title: true\n"
+"---\n"
 
 #: ../../../get_started.md:0
 msgid "RestructuredText"
@@ -313,7 +318,7 @@ msgstr ""
 
 #: ../../../get_started.md:102
 msgid "Supported browsers"
-msgstr ""
+msgstr "支援的瀏覽器"
 
 #: ../../../get_started.md:104
 msgid ""
@@ -435,7 +440,7 @@ msgstr ""
 
 #: ../../../get_started.md:155
 msgid "`octicon` icon role"
-msgstr ""
+msgstr "`octicon` 圖示角色"
 
 #: ../../../get_started.md:157
 msgid ""

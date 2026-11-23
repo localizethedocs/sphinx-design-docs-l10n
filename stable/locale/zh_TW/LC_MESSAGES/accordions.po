@@ -65,7 +65,7 @@ msgstr ""
 
 #: ../../../accordions.md:0
 msgid "Syntax"
-msgstr ""
+msgstr "語法"
 
 #: ../../../accordions.md:31
 msgid ""
@@ -131,7 +131,7 @@ msgstr ""
 
 #: ../../../accordions.md:0
 msgid "First item"
-msgstr ""
+msgstr "第一個項目"
 
 #: ../../../accordions.md:59 ../../../accordions.md:63
 msgid ""
@@ -149,7 +149,7 @@ msgstr ""
 
 #: ../../../accordions.md:0
 msgid "Second item"
-msgstr ""
+msgstr "第二個項目"
 
 #: ../../../accordions.md:66
 msgid "Nested dropdowns"
@@ -181,7 +181,7 @@ msgstr ""
 
 #: ../../../accordions.md:0
 msgid "Another item"
-msgstr ""
+msgstr "其他項目"
 
 #: ../../../accordions.md:88
 msgid ""
@@ -190,7 +190,7 @@ msgstr ""
 
 #: ../../../accordions.md:94
 msgid "Browser support"
-msgstr ""
+msgstr "瀏覽器支援"
 
 #: ../../../accordions.md:96
 msgid ""
@@ -207,7 +207,7 @@ msgstr ""
 
 #: ../../../accordions.md:106
 msgid "`accordion` options"
-msgstr ""
+msgstr "`accordion` 選項"
 
 #: ../../../accordions.md:108
 msgid "flush"

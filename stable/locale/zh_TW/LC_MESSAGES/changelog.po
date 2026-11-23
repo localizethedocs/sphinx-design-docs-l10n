@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../../CHANGELOG.md:1
 msgid "Change Log"
-msgstr ""
+msgstr "變更日誌"
 
 #: ../../../../CHANGELOG.md:3
 msgid "0.8.0 - 2026-11-10"
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../../../CHANGELOG.md:10
 msgid "Upgrade notes"
-msgstr ""
+msgstr "升級備註"
 
 #: ../../../../CHANGELOG.md:12
 msgid ""
@@ -374,7 +374,7 @@ msgstr ""
 
 #: ../../../../CHANGELOG.md:135 ../../../../CHANGELOG.md:160
 msgid "Docs"
-msgstr ""
+msgstr "文件"
 
 #: ../../../../CHANGELOG.md:137
 msgid ""
@@ -684,6 +684,8 @@ msgid ""
 "**Full Changelog**: <https://github.com/executablebooks/sphinx-design/"
 "compare/v0.5.0...v0.6.0>"
 msgstr ""
+"**完整的變更日誌**：<https://github.com/executablebooks/sphinx-design/"
+"compare/v0.5.0...v0.6.0>"
 
 #: ../../../../CHANGELOG.md:272
 msgid "0.5.0 - 2023-07-27"

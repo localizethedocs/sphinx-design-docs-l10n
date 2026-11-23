@@ -93,7 +93,7 @@ msgstr ""
 
 #: ../../../asides.md:39
 msgid "Alignment"
-msgstr ""
+msgstr "對齊"
 
 #: ../../../asides.md:41
 msgid ""

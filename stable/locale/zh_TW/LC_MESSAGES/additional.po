@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../../additional.md:0
 msgid "Syntax"
-msgstr ""
+msgstr "語法"
 
 #: ../../../additional.md:25
 msgid ""

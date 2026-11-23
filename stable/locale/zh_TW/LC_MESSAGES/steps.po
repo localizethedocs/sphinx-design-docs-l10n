@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../steps.md:0
 msgid "Syntax"
-msgstr ""
+msgstr "語法"
 
 #: ../../../steps.md:28
 msgid ""
@@ -208,7 +208,7 @@ msgstr ""
 
 #: ../../../steps.md:111
 msgid "extensions = [\"sphinx_design\"]\n"
-msgstr ""
+msgstr "extensions = [\"sphinx_design\"]\n"
 
 #: ../../../steps.md:0
 msgid "Read the details"
@@ -224,7 +224,7 @@ msgstr ""
 
 #: ../../../steps.md:124
 msgid "`steps` options"
-msgstr ""
+msgstr "`steps` 選項"
 
 #: ../../../steps.md:126
 msgid "start"
@@ -257,7 +257,7 @@ msgstr ""
 
 #: ../../../steps.md:136
 msgid "`step` options"
-msgstr ""
+msgstr "`step` 選項"
 
 #: ../../../steps.md:139
 msgid "Additional CSS classes for the step (list item) element."

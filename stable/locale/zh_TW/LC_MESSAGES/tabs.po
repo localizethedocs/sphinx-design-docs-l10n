@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../../tabs.md:0
 msgid "Syntax"
-msgstr ""
+msgstr "語法"
 
 #: ../../../tabs.md:23
 msgid ""
