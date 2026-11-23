@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Executable Book Project
+# This file is distributed under the same license as the Sphinx Design package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Design latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-22 08:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../index.md:63
+msgid "Components"
+msgstr ""
+
+#: ../../../index.md:78
+msgid "Styling"
+msgstr ""
+
+#: ../../../index.md:86
+msgid "alabaster"
+msgstr "alabaster"
+
+#: ../../../index.md:86
+msgid "sphinx-book-theme"
+msgstr "sphinx-book-theme"
+
+#: ../../../index.md:86
+msgid "pydata-sphinx-theme"
+msgstr "pydata-sphinx-theme"
+
+#: ../../../index.md:86
+msgid "sphinx-rtd-theme"
+msgstr "sphinx-rtd-theme"
+
+#: ../../../index.md:86
+msgid "furo"
+msgstr "furo"
+
+#: ../../../index.md:86
+msgid "Themes"
+msgstr "主題"
+
+#: ../../../index.md:98
+msgid "Development"
+msgstr "開發"
+
+#: ../../../index.md:5
+msgid "sphinx-design"
+msgstr "sphinx-design"
+
+#: ../../../index.md:29
+msgid ""
+"A sphinx extension for designing beautiful, screen-size responsive web-"
+"components."
+msgstr "一個用於設計美觀且具備螢幕尺寸響應能力的網頁組件 Sphinx 擴充功能。"
+
+#: ../../../index.md:45
+msgid "Conflict free CSS"
+msgstr ""
+
+#: ../../../index.md:46
+msgid "All CSS classes are prefixed, to avoid conflicts with other frameworks."
+msgstr "所有 CSS 類別皆帶有前綴，以避免與其他框架發生衝突。"
+
+#: ../../../index.md:48
+msgid "Works without JavaScript"
+msgstr ""
+
+#: ../../../index.md:49
+msgid "JavaScript is not required for any \"essential\" functionality."
+msgstr "任何「基本」功能皆不需要 JavaScript。"
+
+#: ../../../index.md:51
+msgid "Configurable"
+msgstr ""
+
+#: ../../../index.md:52
+msgid "All colors can be configured using CSS variables."
+msgstr ""
+
+#: ../../../index.md:54
+msgid "Supports non-HTML output formats"
+msgstr "支援非 HTML 輸出格式"
+
+#: ../../../index.md:55
+msgid "Components degrade gracefully for non-HTML formats."
+msgstr "組件在非 HTML 格式下可優雅地降級。"
+
+#: ../../../index.md:111
+msgid "Grids"
+msgstr "網格"
+
+#: ../../../index.md:115
+msgid "Screen size adaptable grid layouts."
+msgstr ""
+
+#: ../../../index.md:118
+msgid "Cards"
+msgstr "卡片"
+
+#: ../../../index.md:122
+msgid "Flexible and extensible content containers."
+msgstr ""
+
+#: ../../../index.md:125
+msgid "Dropdowns"
+msgstr ""
+
+#: ../../../index.md:129
+msgid "Hide content in expandable containers."
+msgstr ""
+
+#: ../../../index.md:132
+msgid "Accordions"
+msgstr ""
+
+#: ../../../index.md:136
+msgid "Group dropdowns into an exclusive set."
+msgstr ""
+
+#: ../../../index.md:139
+msgid "Tabs"
+msgstr ""
+
+#: ../../../index.md:143
+msgid "Synchronisable, tabbed content sets."
+msgstr ""
+
+#: ../../../index.md:146
+msgid "Steps"
+msgstr ""
+
+#: ../../../index.md:150
+msgid "Numbered, visually-connected procedures."
+msgstr ""
+
+#: ../../../index.md:153
+msgid "Asides"
+msgstr ""
+
+#: ../../../index.md:157
+msgid "Floated call-outs that text wraps around."
+msgstr ""
+
+#: ../../../index.md:160
+msgid "Badges, Buttons & Icons"
+msgstr "徽章、按鈕與圖示"
+
+#: ../../../index.md:164
+msgid "Roles and directives for {bdg-primary}`badges` and other components."
+msgstr ""
+
+#: ../../../index.md:167
+msgid "CSS Styling"
+msgstr ""
+
+#: ../../../index.md:171
+msgid "Change the default colors and other CSS."
+msgstr "變更默認顏色與其他 CSS。"
+
+#: ../../../index.md:178
+msgid ""
+"Created with inspiration from [Bootstrap](https://getbootstrap.com/) (v5), "
+"[Material Design](https://material.io) and [Material-UI](https://material-"
+"ui.com/) design frameworks."
+msgstr ""

@@ -1,0 +1,358 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Executable Book Project
+# This file is distributed under the same license as the Sphinx Design package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinx Design latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-22 08:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../asides.md:3
+msgid "Asides"
+msgstr ""
+
+#: ../../../asides.md:5
+msgid ""
+"Asides are floated call-out boxes that the surrounding text wraps around, "
+"ideal for pull-outs, margin notes and short side comments that sit *beside* "
+"the flow rather than interrupting it."
+msgstr ""
+
+#: ../../../asides.md:0
+msgid "A pull-out note"
+msgstr ""
+
+#: ../../../asides.md:13
+msgid ""
+"Asides float to the side of the main text. On narrow screens they fall back "
+"to a full-width block, so nothing is ever squeezed."
+msgstr ""
+
+#: ../../../asides.md:18 ../../../asides.md:53 ../../../asides.md:68
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis arcu "
+"vitae odio gravida congue. Donec porttitor ac risus et condimentum. "
+"Phasellus bibendum ac risus a sollicitudin. Proin pulvinar risus ac mauris "
+"aliquet fermentum et varius nisi. Etiam sit amet metus ac ipsum placerat "
+"congue semper non diam. Nunc luctus tincidunt ipsum id eleifend. Ut sed "
+"faucibus ipsum. Aliquam maximus dictum posuere. Nunc vitae libero nec enim "
+"tempus euismod. Aliquam sed lectus ac nisl sollicitudin ultricies id at "
+"neque. Aliquam fringilla odio vitae lorem ornare, sit amet scelerisque orci "
+"fringilla. Nam sed arcu dignissim, ultrices quam sit amet, commodo ipsum. "
+"Etiam quis nunc at ligula tincidunt eleifend."
+msgstr ""
+
+#: ../../../asides.md:0
+msgid "Syntax"
+msgstr ""
+
+#: ../../../asides.md:22
+msgid ""
+":::{aside}\n"
+"An aside floats beside the flow, and the surrounding text wraps around it.\n"
+":::\n"
+"\n"
+":::{aside} Aside title\n"
+":align: left\n"
+"\n"
+"Asides are handy for pull-outs, margin notes and side comments.\n"
+":::\n"
+msgstr ""
+
+#: ../../../asides.md:25
+msgid ""
+".. aside::\n"
+"\n"
+"   An aside floats beside the flow, and the surrounding text wraps around "
+"it.\n"
+"\n"
+".. aside:: Aside title\n"
+"   :align: left\n"
+"\n"
+"   Asides are handy for pull-outs, margin notes and side comments.\n"
+msgstr ""
+
+#: ../../../asides.md:32
+msgid ""
+"Asides *complement* [admonitions](https://myst-parser.readthedocs.io/en/"
+"latest/syntax/admonitions.html) and [cards](./cards.md): use an "
+"**admonition** for a note that interrupts the flow as a full-width block, a "
+"**card** for a self-contained boxed unit inside a [grid](./grids.md), and an "
+"**aside** when you want the body text to keep flowing *around* a side box."
+msgstr ""
+
+#: ../../../asides.md:39
+msgid "Alignment"
+msgstr ""
+
+#: ../../../asides.md:41
+msgid ""
+"Use the `align` option to float the box `left` or `right` (the default is "
+"`right`)."
+msgstr ""
+
+#: ../../../asides.md:0
+msgid "Floated left"
+msgstr ""
+
+#: ../../../asides.md:48
+msgid ""
+"`:align: left` floats the box to the left, with the text wrapping down its "
+"right-hand side."
+msgstr ""
+
+#: ../../../asides.md:54
+msgid "Widths"
+msgstr ""
+
+#: ../../../asides.md:56
+msgid ""
+"The `width` option accepts `25%`, `33%` (the default) or `50%`, controlling "
+"how much horizontal space the box occupies (and therefore how much room is "
+"left for the wrapping text)."
+msgstr ""
+
+#: ../../../asides.md:0
+msgid "A 50% aside"
+msgstr ""
+
+#: ../../../asides.md:64
+msgid "At `:width: 50%` the box takes up half the content width."
+msgstr ""
+
+#: ../../../asides.md:72
+msgid ""
+"Widths are only applied from the `md` breakpoint (768&nbsp;px) upwards. "
+"Below that the aside becomes a full-width block regardless of the `width` "
+"option, so it stays readable on small screens. On themes with a right-hand "
+"in-page table of contents (such as pydata-sphinx-theme), the main column is "
+"already narrower, so a right-floated aside leaves less room for the wrapped "
+"text; prefer a smaller `width` or `:align: left` there."
+msgstr ""
+
+#: ../../../asides.md:80
+msgid "Stopping the wrap"
+msgstr ""
+
+#: ../../../asides.md:82
+msgid ""
+"Text keeps wrapping around an aside until it runs out. To force following "
+"content to start *below* the box instead, add the `sd-clear-both` utility "
+"class to it, for example with an empty `div` directive:"
+msgstr ""
+
+#: ../../../asides.md:0
+msgid "Short aside"
+msgstr ""
+
+#: ../../../asides.md:90
+msgid "A short aside."
+msgstr ""
+
+#: ../../../asides.md:97
+msgid ""
+"This paragraph is pushed below the aside because the preceding empty `div` "
+"has the `sd-clear-both` class."
+msgstr ""
+
+#: ../../../asides.md:100
+msgid ""
+"Always clear a *trailing* aside A float is not contained by its parent "
+"section, so an aside that is the **last element of a section** (with no text "
+"left to wrap) can extend past the end of the section and overlap whatever "
+"follows — the next heading, or content injected by the theme. When an aside "
+"is the final piece of a section, follow it with a cleared block:"
+msgstr ""
+
+#: ../../../asides.md:107
+msgid ""
+".. aside:: Wrap-up note\n"
+"   :align: right\n"
+"\n"
+"   The last content in this section.\n"
+"\n"
+".. div:: sd-clear-both\n"
+msgstr ""
+
+#: ../../../asides.md:116
+msgid ""
+"Themes can address this globally instead, by clearfixing their main content "
+"column (for example `.article-container { display: flow-root }`), which "
+"contains every float without an explicit clearing element."
+msgstr ""
+
+#: ../../../asides.md:121
+msgid "Semantic output"
+msgstr ""
+
+#: ../../../asides.md:123
+msgid ""
+"In HTML an aside is rendered as a native [`<aside>`](https://"
+"developer.mozilla.org/en/docs/Web/HTML/Element/aside) element (not a plain "
+"`<div>`), which correctly conveys \"tangentially related content\" to "
+"assistive technologies and reader modes. In non-HTML outputs (LaTeX, "
+"text, ...) it degrades to a plain titled block. No JavaScript is involved: "
+"the float and the responsive collapse are pure CSS."
+msgstr ""
+
+#: ../../../asides.md:130
+msgid ""
+"A **titled** aside is labelled by its title: the `<aside>` carries an `aria-"
+"labelledby` attribute pointing at the title element (which is given a "
+"stable, automatically generated id when you do not supply a `:name:`), so "
+"screen readers announce the region by its heading. An **untitled** aside has "
+"no heading text to label it with and is intentionally left unlabelled — give "
+"it a title if you want it announced as a named region."
+msgstr ""
+
+#: ../../../asides.md:137
+msgid "Cross-referencing"
+msgstr ""
+
+#: ../../../asides.md:139
+msgid ""
+"When you give an aside a `:name:`, the target (and therefore the `id` "
+"anchor) lands on the **title** element for a titled aside, or on the "
+"`<aside>` itself for an untitled one. For a titled aside `` :ref:`the-name` "
+"`` renders using the title text, exactly like referencing a section:"
+msgstr ""
+
+#: ../../../asides.md:144
+msgid ""
+".. aside:: Design rationale\n"
+"   :name: rationale\n"
+"\n"
+"   ...\n"
+"\n"
+"See the :ref:`rationale` aside.\n"
+msgstr ""
+
+#: ../../../asides.md:153
+msgid ""
+"An **untitled** named aside has no caption text, so — as with any "
+"captionless target in Sphinx — a bare `` :ref:`the-name` `` cannot derive "
+"its link text: it warns and renders as plain text without a link. Reference "
+"it with **explicit text** instead: `` :ref:`jump to the note <the-name>` ``."
+msgstr ""
+
+#: ../../../asides.md:158
+msgid "`aside` options"
+msgstr ""
+
+#: ../../../asides.md:160
+msgid "align"
+msgstr ""
+
+#: ../../../asides.md:161
+msgid "Float direction of the aside: `left` or `right` (default `right`)."
+msgstr ""
+
+#: ../../../asides.md:163
+msgid "width"
+msgstr ""
+
+#: ../../../asides.md:164
+msgid ""
+"Width of the aside from the `md` breakpoint up: `25%`, `33%` or `50%` "
+"(default `33%`)."
+msgstr ""
+
+#: ../../../asides.md:167
+msgid "margin"
+msgstr ""
+
+#: ../../../asides.md:168
+msgid ""
+"Outer margin of the aside. One (all) or four (top bottom left right) values "
+"from: 0, 1, 2, 3, 4, 5, auto."
+msgstr ""
+
+#: ../../../asides.md:171
+msgid "name"
+msgstr ""
+
+#: ../../../asides.md:172
+msgid ""
+"Set a reference-able name for the aside (attached to the title, where "
+"present, so it can be used as the cross-reference text)."
+msgstr ""
+
+#: ../../../asides.md:175
+msgid "class"
+msgstr ""
+
+#: ../../../asides.md:176
+msgid "Additional CSS classes for the (outer) `<aside>` element."
+msgstr ""
+
+#: ../../../asides.md:178
+msgid "class-title"
+msgstr ""
+
+#: ../../../asides.md:179
+msgid "Additional CSS classes for the title element."
+msgstr ""
+
+#: ../../../asides.md:181
+msgid "class-body"
+msgstr ""
+
+#: ../../../asides.md:182
+msgid "Additional CSS classes for the body element."
+msgstr ""
+
+#: ../../../asides.md:187
+msgid ""
+":::{aside} Narrow, right-aligned\n"
+":name: target\n"
+":align: right\n"
+":width: 25%\n"
+":margin: 1\n"
+":class: class-aside\n"
+":class-title: class-title\n"
+":class-body: class-body\n"
+"\n"
+"A 25% wide aside, floated right.\n"
+":::\n"
+"\n"
+":::{aside} Wide, left-aligned\n"
+":align: left\n"
+":width: 50%\n"
+"\n"
+"A 50% wide aside, floated left.\n"
+":::\n"
+"\n"
+"{ref}`target`, {ref}`text <target>`\n"
+msgstr ""
+
+#: ../../../asides.md:190
+msgid ""
+".. aside:: Narrow, right-aligned\n"
+"   :name: target\n"
+"   :align: right\n"
+"   :width: 25%\n"
+"   :margin: 1\n"
+"   :class: class-aside\n"
+"   :class-title: class-title\n"
+"   :class-body: class-body\n"
+"\n"
+"   A 25% wide aside, floated right.\n"
+"\n"
+".. aside:: Wide, left-aligned\n"
+"   :align: left\n"
+"   :width: 50%\n"
+"\n"
+"   A 50% wide aside, floated left.\n"
+"\n"
+":ref:`target`, :ref:`text <target>`\n"
+msgstr ""
