@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../badges_buttons.md:5
 msgid "Badges"
-msgstr ""
+msgstr "徽章"
 
 #: ../../../badges_buttons.md:7
 msgid ""
@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../../badges_buttons.md:0
 msgid "Syntax"
-msgstr ""
+msgstr "語法"
 
 #: ../../../badges_buttons.md:26
 msgid ""
@@ -171,7 +171,7 @@ msgstr ""
 
 #: ../../../badges_buttons.md:56
 msgid "Badge tooltips"
-msgstr ""
+msgstr "徽章工具提示"
 
 #: ../../../badges_buttons.md:58
 msgid ""
@@ -230,7 +230,7 @@ msgstr ""
 
 #: ../../../badges_buttons.md:101
 msgid "The `tooltip` role option"
-msgstr ""
+msgstr "`tooltip` 角色選項"
 
 #: ../../../badges_buttons.md:103
 msgid ""
@@ -314,7 +314,7 @@ msgstr ""
 
 #: ../../../badges_buttons.md:162
 msgid "Buttons"
-msgstr ""
+msgstr "按鈕"
 
 #: ../../../badges_buttons.md:164
 msgid "Buttons in Sphinx Design are actually links:"
@@ -370,7 +370,7 @@ msgstr ""
 
 #: ../../../badges_buttons.md:191
 msgid "Button text"
-msgstr ""
+msgstr "按鈕文字"
 
 #: ../../../badges_buttons.md:223
 msgid ""
@@ -670,7 +670,7 @@ msgstr ""
 
 #: ../../../badges_buttons.md:389
 msgid "Octicon Icons"
-msgstr ""
+msgstr "Octicon 圖示"
 
 #: ../../../badges_buttons.md:391
 msgid "A coloured icon: {octicon}`report;1em;sd-text-info`, some more text."
@@ -686,7 +686,7 @@ msgstr ""
 
 #: ../../../badges_buttons.md:0
 msgid "All Octicons"
-msgstr ""
+msgstr "所有 Octicon"
 
 #: ../../../badges_buttons.md:409
 msgid "Material Design Icons"
@@ -700,23 +700,23 @@ msgstr ""
 
 #: ../../../badges_buttons.md:413
 msgid "`material-regular`"
-msgstr ""
+msgstr "`material-regular`"
 
 #: ../../../badges_buttons.md:414
 msgid "`material-outlined`"
-msgstr ""
+msgstr "`material-outlined`"
 
 #: ../../../badges_buttons.md:415
 msgid "`material-round`"
-msgstr ""
+msgstr "`material-round`"
 
 #: ../../../badges_buttons.md:416
 msgid "`material-sharp`"
-msgstr ""
+msgstr "`material-sharp`"
 
 #: ../../../badges_buttons.md:417
 msgid "`material-twotone`"
-msgstr ""
+msgstr "`material-twotone`"
 
 #: ../../../badges_buttons.md:419
 msgid ""
@@ -797,7 +797,7 @@ msgstr ""
 
 #: ../../../badges_buttons.md:437
 msgid "FontAwesome Icons"
-msgstr ""
+msgstr "FontAwesome 圖示"
 
 #: ../../../badges_buttons.md:439
 msgid ""
@@ -1014,7 +1014,7 @@ msgstr ""
 
 #: ../../../badges_buttons.md:533
 msgid "Using FontAwesome Pro kits"
-msgstr ""
+msgstr "使用 FontAwesome Pro 套件"
 
 #: ../../../badges_buttons.md:535
 msgid ""

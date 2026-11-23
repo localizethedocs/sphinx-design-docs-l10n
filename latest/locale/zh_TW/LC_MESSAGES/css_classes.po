@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../css_classes.md:1
 msgid "CSS Classes"
-msgstr ""
+msgstr "CSS 類別"
 
 #: ../../../css_classes.md:3
 msgid ""
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../css_classes.md:0
 msgid "Syntax"
-msgstr ""
+msgstr "語法"
 
 #: ../../../css_classes.md:15
 msgid ""
@@ -410,47 +410,47 @@ msgstr ""
 
 #: ../../../css_classes.md:131
 msgid "`sd-border-{thickness}`"
-msgstr ""
+msgstr "`sd-border-{thickness}`"
 
 #: ../../../css_classes.md:132
 msgid "`sd-border-top-{thickness}`"
-msgstr ""
+msgstr "`sd-border-top-{thickness}`"
 
 #: ../../../css_classes.md:133
 msgid "`sd-border-bottom-{thickness}`"
-msgstr ""
+msgstr "`sd-border-bottom-{thickness}`"
 
 #: ../../../css_classes.md:134
 msgid "`sd-border-right-{thickness}`"
-msgstr ""
+msgstr "`sd-border-right-{thickness}`"
 
 #: ../../../css_classes.md:135
 msgid "`sd-border-left-{thickness}`"
-msgstr ""
+msgstr "`sd-border-left-{thickness}`"
 
 #: ../../../css_classes.md:144
 msgid "`sd-border-0`"
-msgstr ""
+msgstr "`sd-border-0`"
 
 #: ../../../css_classes.md:150
 msgid "`sd-border-1`"
-msgstr ""
+msgstr "`sd-border-1`"
 
 #: ../../../css_classes.md:156
 msgid "`sd-border-2`"
-msgstr ""
+msgstr "`sd-border-2`"
 
 #: ../../../css_classes.md:162
 msgid "`sd-border-3`"
-msgstr ""
+msgstr "`sd-border-3`"
 
 #: ../../../css_classes.md:168
 msgid "`sd-border-4`"
-msgstr ""
+msgstr "`sd-border-4`"
 
 #: ../../../css_classes.md:174
 msgid "`sd-border-5`"
-msgstr ""
+msgstr "`sd-border-5`"
 
 #: ../../../css_classes.md:178
 msgid "Border can be rounded by different amounts using:"
@@ -458,27 +458,27 @@ msgstr ""
 
 #: ../../../css_classes.md:180 ../../../css_classes.md:194
 msgid "`sd-rounded-0`"
-msgstr ""
+msgstr "`sd-rounded-0`"
 
 #: ../../../css_classes.md:181 ../../../css_classes.md:200
 msgid "`sd-rounded-1`"
-msgstr ""
+msgstr "`sd-rounded-1`"
 
 #: ../../../css_classes.md:182 ../../../css_classes.md:206
 msgid "`sd-rounded-2`"
-msgstr ""
+msgstr "`sd-rounded-2`"
 
 #: ../../../css_classes.md:183 ../../../css_classes.md:212
 msgid "`sd-rounded-3`"
-msgstr ""
+msgstr "`sd-rounded-3`"
 
 #: ../../../css_classes.md:184 ../../../css_classes.md:218
 msgid "`sd-rounded-pill`"
-msgstr ""
+msgstr "`sd-rounded-pill`"
 
 #: ../../../css_classes.md:185 ../../../css_classes.md:224
 msgid "`sd-rounded-circle`"
-msgstr ""
+msgstr "`sd-rounded-circle`"
 
 #: ../../../css_classes.md:228
 msgid "Shadows"
@@ -492,19 +492,19 @@ msgstr ""
 
 #: ../../../css_classes.md:232 ../../../css_classes.md:243
 msgid "`sd-shadow-none`"
-msgstr ""
+msgstr "`sd-shadow-none`"
 
 #: ../../../css_classes.md:233 ../../../css_classes.md:248
 msgid "`sd-shadow-sm`"
-msgstr ""
+msgstr "`sd-shadow-sm`"
 
 #: ../../../css_classes.md:234 ../../../css_classes.md:253
 msgid "`sd-shadow-md`"
-msgstr ""
+msgstr "`sd-shadow-md`"
 
 #: ../../../css_classes.md:235 ../../../css_classes.md:258
 msgid "`sd-shadow-lg`"
-msgstr ""
+msgstr "`sd-shadow-lg`"
 
 #: ../../../css_classes.md:262
 msgid "Avatars"
@@ -523,55 +523,55 @@ msgstr ""
 
 #: ../../../css_classes.md:268
 msgid "`sd-avatar-xs`"
-msgstr ""
+msgstr "`sd-avatar-xs`"
 
 #: ../../../css_classes.md:269
 msgid "`sd-avatar-sm`"
-msgstr ""
+msgstr "`sd-avatar-sm`"
 
 #: ../../../css_classes.md:270
 msgid "`sd-avatar-md`"
-msgstr ""
+msgstr "`sd-avatar-md`"
 
 #: ../../../css_classes.md:271
 msgid "`sd-avatar-lg`"
-msgstr ""
+msgstr "`sd-avatar-lg`"
 
 #: ../../../css_classes.md:272
 msgid "`sd-avatar-xl`"
-msgstr ""
+msgstr "`sd-avatar-xl`"
 
 #: ../../../css_classes.md:273
 msgid "`sd-avatar-inherit`"
-msgstr ""
+msgstr "`sd-avatar-inherit`"
 
 #: ../../../css_classes.md:274
 msgid "`sd-avatar-initial`"
-msgstr ""
+msgstr "`sd-avatar-initial`"
 
 #: ../../../css_classes.md:279
 msgid "sd-avatar-xs"
-msgstr ""
+msgstr "sd-avatar-xs"
 
 #: ../../../css_classes.md:282
 msgid "sd-avatar-sm"
-msgstr ""
+msgstr "sd-avatar-sm"
 
 #: ../../../css_classes.md:285
 msgid "sd-avatar-md"
-msgstr ""
+msgstr "sd-avatar-md"
 
 #: ../../../css_classes.md:288
 msgid "sd-avatar-lg"
-msgstr ""
+msgstr "sd-avatar-lg"
 
 #: ../../../css_classes.md:291
 msgid "sd-avatar-xl"
-msgstr ""
+msgstr "sd-avatar-xl"
 
 #: ../../../css_classes.md:296
 msgid "Load Animations"
-msgstr ""
+msgstr "載入動畫"
 
 #: ../../../css_classes.md:298
 msgid ""
@@ -581,23 +581,23 @@ msgstr ""
 
 #: ../../../css_classes.md:300
 msgid "`sd-animate-slide-from-left`"
-msgstr ""
+msgstr "`sd-animate-slide-from-left`"
 
 #: ../../../css_classes.md:301
 msgid "`sd-animate-slide-from-right`"
-msgstr ""
+msgstr "`sd-animate-slide-from-right`"
 
 #: ../../../css_classes.md:302
 msgid "`sd-animate-grow100`"
-msgstr ""
+msgstr "`sd-animate-grow100`"
 
 #: ../../../css_classes.md:303
 msgid "`sd-animate-grow50`"
-msgstr ""
+msgstr "`sd-animate-grow50`"
 
 #: ../../../css_classes.md:304
 msgid "`sd-animate-grow50-rot20`"
-msgstr ""
+msgstr "`sd-animate-grow50-rot20`"
 
 #: ../../../css_classes.md:306
 msgid ""

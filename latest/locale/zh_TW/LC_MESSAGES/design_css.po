@@ -244,7 +244,7 @@ msgstr ""
 
 #: ../../../design_css.md:91
 msgid "Browser support"
-msgstr ""
+msgstr "瀏覽器支援"
 
 #: ../../../design_css.md:93
 msgid ""

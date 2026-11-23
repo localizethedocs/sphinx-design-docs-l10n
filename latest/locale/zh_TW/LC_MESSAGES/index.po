@@ -97,7 +97,7 @@ msgstr "組件在非 HTML 格式下可優雅地降級。"
 
 #: ../../../index.md:111
 msgid "Grids"
-msgstr ""
+msgstr "網格"
 
 #: ../../../index.md:115
 msgid "Screen size adaptable grid layouts."

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../grids.md:3
 msgid "Grids"
-msgstr ""
+msgstr "網格"
 
 #: ../../../grids.md:5
 msgid "Introduction"
@@ -73,7 +73,7 @@ msgstr ""
 
 #: ../../../grids.md:0
 msgid "Syntax"
-msgstr ""
+msgstr "語法"
 
 #: ../../../grids.md:39
 msgid ""
@@ -150,7 +150,7 @@ msgstr ""
 
 #: ../../../grids.md:120
 msgid "Placing a card in a grid"
-msgstr ""
+msgstr "在網格中放置卡片"
 
 #: ../../../grids.md:122
 msgid ""
@@ -194,7 +194,7 @@ msgstr ""
 
 #: ../../../grids.md:145
 msgid "Controlling spacing between items"
-msgstr ""
+msgstr "控制項目間距"
 
 #: ../../../grids.md:147
 msgid ""
@@ -312,7 +312,7 @@ msgstr ""
 
 #: ../../../grids.md:223
 msgid "Reversing the item order"
-msgstr ""
+msgstr "反轉項目順序"
 
 #: ../../../grids.md:225
 msgid ""
@@ -470,11 +470,11 @@ msgstr ""
 
 #: ../../../grids.md:317
 msgid "`grid` options"
-msgstr ""
+msgstr "`grid` 選項"
 
 #: ../../../grids.md:319
 msgid "gutter"
-msgstr ""
+msgstr "gutter"
 
 #: ../../../grids.md:320
 msgid ""
@@ -484,7 +484,7 @@ msgstr ""
 
 #: ../../../grids.md:323 ../../../grids.md:349 ../../../grids.md:375
 msgid "margin"
-msgstr ""
+msgstr "margin"
 
 #: ../../../grids.md:324
 msgid ""
@@ -504,7 +504,7 @@ msgstr ""
 
 #: ../../../grids.md:331 ../../../grids.md:363
 msgid "outline"
-msgstr ""
+msgstr "outline"
 
 #: ../../../grids.md:332
 msgid "Create a border around the grid."
@@ -512,7 +512,7 @@ msgstr ""
 
 #: ../../../grids.md:334
 msgid "reverse"
-msgstr ""
+msgstr "reverse"
 
 #: ../../../grids.md:335
 msgid "Reverse the order of the grid items."
@@ -520,7 +520,7 @@ msgstr ""
 
 #: ../../../grids.md:337
 msgid "class-container"
-msgstr ""
+msgstr "class-container"
 
 #: ../../../grids.md:338
 msgid "Additional CSS classes for the grid container element."
@@ -528,7 +528,7 @@ msgstr ""
 
 #: ../../../grids.md:340
 msgid "class-row"
-msgstr ""
+msgstr "class-row"
 
 #: ../../../grids.md:341
 msgid "Additional CSS classes for the grid row element."
@@ -536,11 +536,11 @@ msgstr ""
 
 #: ../../../grids.md:343
 msgid "`grid-item` options"
-msgstr ""
+msgstr "`grid-item` 選項"
 
 #: ../../../grids.md:345 ../../../grids.md:371
 msgid "columns"
-msgstr ""
+msgstr "columns"
 
 #: ../../../grids.md:346 ../../../grids.md:372
 msgid ""
@@ -563,7 +563,7 @@ msgstr ""
 
 #: ../../../grids.md:357
 msgid "child-direction"
-msgstr ""
+msgstr "child-direction"
 
 #: ../../../grids.md:358
 msgid "Direction of children in the grid item: `column` (default) or `row`."
@@ -571,7 +571,7 @@ msgstr ""
 
 #: ../../../grids.md:360
 msgid "child-align"
-msgstr ""
+msgstr "child-align"
 
 #: ../../../grids.md:361
 msgid ""
@@ -601,4 +601,4 @@ msgstr ""
 
 #: ../../../grids.md:386
 msgid "Plus all options from [](cards:options)."
-msgstr ""
+msgstr "加上所有 [`card` 選項](cards:options)中的選項。"
